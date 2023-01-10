@@ -3,7 +3,7 @@ name: Bug report
 about: Create a bug report to help us improve the app
 title: ''
 labels: bug
-assignees: bra1n
+assignees: ''
 
 ---
 
