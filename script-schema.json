@@ -13,6 +13,7 @@
           "id",
           "name"
         ],
+        "additionalProperties": false,
         "properties": {
           "id": {
             "type": "string",
@@ -70,6 +71,7 @@
           "team",
           "ability"
         ],
+        "additionalProperties": false,
         "properties": {
           "id": {
             "type": "string",
