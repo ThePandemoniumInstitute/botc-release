@@ -320,6 +320,20 @@
         "title": "Official character ID",
         "description": "If you want to include official characters in the script, it is sufficient to provide their ID as a string",
         "examples": ["soldier", "imp", "washerwoman"]
+      },
+      {
+        "type": "object",
+        "title": "Official Character (deprecated)",
+        "deprecated": true,
+        "required": ["id"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Official character ID",
+            "examples": ["soldier", "imp", "washerwoman"]
+          }
+        }
       }
     ]
   }
