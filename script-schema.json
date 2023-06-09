@@ -13,7 +13,6 @@
           "id",
           "name"
         ],
-        "additionalProperties": false,
         "properties": {
           "id": {
             "type": "string",
@@ -92,6 +91,14 @@
               "Fang-Gu"
             ]
           },
+          "image": {
+            "type": "string",
+            "format": "uri",
+            "title": "Character icon",
+            "examples": [
+              "https://i.imgur.com/character-icon.png"
+            ]
+          },
           "team": {
             "type": "string",
             "title": "Character team",
@@ -104,15 +111,6 @@
               "fabled"
             ]
           },
-          "ability": {
-            "type": "string",
-            "title": "Character ability",
-            "examples": [
-              "You start knowing that 1 of 2 players is a particular Townsfolk.",
-              "Each night, Minions choose who babysits Lil' Monsta's token \u0026 \"is the Demon\". A player dies each night*. [+1 Minion]",
-              "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu \u0026 you die instead. [+1 Outsider]"
-            ]
-          },
           "edition": {
             "type": "string",
             "title": "The edition ID",
@@ -121,6 +119,15 @@
               "bmr",
               "snv",
               "fallofrome"
+            ]
+          },
+          "ability": {
+            "type": "string",
+            "title": "Character ability",
+            "examples": [
+              "You start knowing that 1 of 2 players is a particular Townsfolk.",
+              "Each night, Minions choose who babysits Lil' Monsta's token \u0026 \"is the Demon\". A player dies each night*. [+1 Minion]",
+              "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu \u0026 you die instead. [+1 Outsider]"
             ]
           },
           "firstNight": {
