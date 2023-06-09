@@ -103,13 +103,13 @@
               },
               {
                 "type": "array",
+                "title": "Set of character icon URLs",
+                "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment"
                 "minItems": 1,
                 "maxItems": 3,
                 "items": {
                   "type": "string",
                   "format": "uri",
-                  "title": "Set of character icon URLs",
-                  "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment"
                 },
                 "examples": [
                   [
