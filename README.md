@@ -23,7 +23,7 @@ Your custom (and homebrew) scripts can be augmented with "meta data" to improve 
 ```
 
 ## Homebrew scripts
-If you're interested in creating your own "homebrew" scripts or characters, there's a [JSON Schema available](script-schema.json) which will should give you an idea how your JSON should look like, in order to be supported by the app. You can also use this schema to validate your JSON file. Here's an example of how a character might be defined:
+If you're interested in creating your own "homebrew" scripts or characters, there's a [JSON Schema available](script-schema.json) which will give you an idea about how your JSON should look like, in order to be supported by the app. You can also use this schema to validate your JSON file. Here's an example of how a character might be defined:
 
 ```json
 {
