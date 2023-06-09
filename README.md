@@ -30,7 +30,10 @@ If you're interested in creating your own "homebrew" scripts or characters, ther
   "id": "widow",
   "name": "Widow",
   "edition": "experimental",
-  "image": "https://i.imgur.com/character-icon.png",
+  "image": [
+    "https://i.imgur.com/widow.png",
+    "https://i.imgur.com/widow_good.png"
+  ],
   "team": "minion",
   "firstNight": 22,
   "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player. :reminder:",
