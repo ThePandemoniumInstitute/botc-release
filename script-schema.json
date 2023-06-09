@@ -1,0 +1,324 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ThePandemoniumInstitute/botc-release/main/script-schema.json",
+  "type": "array",
+  "default": [],
+  "title": "Blood on the Clocktower Custom Script",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "title": "Script Metadata",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "The ID property must be called '_meta' for the Script metadata object.",
+            "enum": ["_meta"]
+          },
+          "name": {
+            "type": "string",
+            "title": "The script name",
+            "examples": [
+              "Fall of Rome",
+              "My Custom Homebrew"
+            ]
+          },
+          "author": {
+            "type": "string",
+            "title": "The script author",
+            "examples": [
+              "The Pandemonium Institute",
+              "Your Name"
+            ]
+          },
+          "logo": {
+            "type": "string",
+            "format": "uri",
+            "title": "The script logo image",
+            "examples": [
+              "https://imgur.com/logo.png"
+            ]
+          },
+          "background": {
+            "type": "string",
+            "format": "uri",
+            "title": "The script background image",
+            "examples": [
+              "https://imgur.com/background.jpg"
+            ]
+          }
+        },
+        "examples": [
+          {
+            "id": "_meta",
+            "name": "Deadly Penance Day",
+            "author": "TPI",
+            "logo": "https://url.to/your/logo.png"
+          }
+        ]
+      },
+      {
+        "type": "object",
+        "title": "Script Character",
+        "required": [
+          "id",
+          "name",
+          "team",
+          "ability"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Character ID, alphanumeric lowercase",
+            "examples": [
+              "washerwoman",
+              "lilmonsta",
+              "fanggu"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "Character name",
+            "maxLength": 20,
+            "examples": [
+              "Washer Woman",
+              "Lil' Monsta",
+              "Fang-Gu"
+            ]
+          },
+          "team": {
+            "type": "string",
+            "title": "Character team",
+            "enum": [
+              "townsfolk",
+              "outsider",
+              "minion",
+              "demon",
+              "traveler",
+              "fabled"
+            ]
+          },
+          "ability": {
+            "type": "string",
+            "title": "Character ability",
+            "examples": [
+              "You start knowing that 1 of 2 players is a particular Townsfolk.",
+              "Each night, Minions choose who babysits Lil' Monsta's token \u0026 \"is the Demon\". A player dies each night*. [+1 Minion]",
+              "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu \u0026 you die instead. [+1 Outsider]"
+            ]
+          },
+          "edition": {
+            "type": "string",
+            "title": "The edition ID",
+            "examples": [
+              "tb",
+              "bmr",
+              "snv",
+              "fallofrome"
+            ]
+          },
+          "firstNight": {
+            "type": "number",
+            "title": "First night wake-up priority. 0 means this character doesn't wake during the first night.",
+            "examples": [
+              37,
+              0,
+              15
+            ]
+          },
+          "firstNightReminder": {
+            "type": "string",
+            "title": "First night Storyteller reminder",
+            "examples": [
+              "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
+              "Wake all Minions, allow them to choose a babysitter :reminder:",
+              ""
+            ]
+          },
+          "otherNight": {
+            "type": "number",
+            "title": "Other nights wake-up priority. 0 means this character doesn't wake during other nights.",
+            "examples": [
+              0,
+              10,
+              15
+            ]
+          },
+          "otherNightReminder": {
+            "type": "string",
+            "title": "Other nights Storyteller reminder",
+            "examples": [
+              "",
+              "Wake all Minions, allow them to choose a babysitter :reminder: A player might die :reminder:",
+              "The Fang Gu chooses a player. :reminder: If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens \u0026 give a thumbs-down. :reminder:"
+            ]
+          },
+          "reminders": {
+            "type": "array",
+            "default": [],
+            "title": "Character reminder tokens",
+            "items": {
+              "type": "string",
+              "maxlength": 20,
+              "examples": [
+                "Townsfolk",
+                "Wrong",
+                "Dead",
+                "Is The Demon"
+              ]
+            }
+          },
+          "remindersGlobal": {
+            "type": "array",
+            "default": [],
+            "title": "Global character reminder tokens, which will be selectable even when the character is not in play.",
+            "items": {
+              "type": "string",
+              "maxlength": 20,
+              "examples": [
+                "Drunk",
+                "Is The Philosopher"
+              ]
+            }
+          },
+          "setup": {
+            "type": "boolean",
+            "title": "Whether this character has a ability that is relevant for the game setup.",
+            "default": false
+          },
+          "jinxes": {
+            "type": "array",
+            "title": "Jinxes with other characters on this script",
+            "items": {
+              "type": "object",
+              "title": "An individual Jinx pair",
+              "required": [
+                "id",
+                "reason"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "title": "The ID of the other character this one is jinxed with.",
+                  "examples": [
+                    "spy",
+                    "fanggu",
+                    "lilmonsta"
+                  ]
+                },
+                "reason": {
+                  "type": "string",
+                  "title": "The Jinx explanation",
+                  "examples": [
+                    "If the Cannibal gains the Butler ability, the Cannibal learns this.",
+                    "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+                  ]
+                }
+              }
+            }
+          },
+          "special": {
+            "type": "array",
+            "title": "Special app integration features for this character",
+            "items": {
+              "type": "object",
+              "title": "A special app integration feature",
+              "required": [
+                "name",
+                "type"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "The feature name reference",
+                  "description": "This is a list of the currently implemented special features and will be growing over time.",
+                  "enum": [
+                    "grimoire",
+                    "pointing",
+                    "ghost-votes",
+                    "distribute-roles"
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "title": "The integration type, where the feature will be used.",
+                  "description": "Currently supported values are: signal - during night signaling, ability - when clicking on the character token",
+                  "enum": [
+                    "signal",
+                    "ability"
+                  ]
+                },
+                "time": {
+                  "type": "string",
+                  "title": "At which point during the game can the ability be used",
+                  "enum": [
+                    "pregame",
+                    "day",
+                    "night",
+                    "firstNight",
+                    "firstDay",
+                    "otherNight",
+                    "otherDay"
+                  ]
+                },
+                "global": {
+                  "type": "string",
+                  "title": "Global ability scope",
+                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used.",
+                  "enum": [
+                    "townsfolk",
+                    "outsider",
+                    "minion",
+                    "demon",
+                    "traveler"
+                  ]
+                }
+              },
+              "examples": [
+                {
+                  "name": "grimoire",
+                  "type": "signal",
+                  "time": "night"
+                },
+                {
+                  "name": "pointing",
+                  "type": "ability",
+                  "time": "night",
+                  "global": "minion"
+                }
+              ]
+            }
+          }
+        },
+        "examples": [
+          {
+            "id": "washerwoman",
+            "name": "Washerwoman",
+            "edition": "tb",
+            "team": "townsfolk",
+            "firstNightReminder": "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
+            "otherNightReminder": "",
+            "reminders": [
+              "Townsfolk",
+              "Wrong"
+            ],
+            "setup": false,
+            "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
+            "firstNight": 37,
+            "otherNight": 0
+          }
+        ]
+      },
+      {
+        "type": "string",
+        "title": "Official character ID",
+        "description": "If you want to include official characters in the script, it is sufficient to provide their ID as a string",
+        "examples": ["soldier", "imp", "washerwoman"]
+      }
+    ]
+  }
+}
