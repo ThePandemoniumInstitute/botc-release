@@ -92,11 +92,41 @@
             ]
           },
           "image": {
-            "type": "string",
-            "format": "uri",
-            "title": "Character icon",
-            "examples": [
-              "https://i.imgur.com/character-icon.png"
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "uri",
+                "title": "Character icon",
+                "examples": [
+                  "https://i.imgur.com/character-icon.png"
+                ]
+              },
+              {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 3,
+                "items": {
+                  "type": "string",
+                  "format": "uri",
+                  "title": "Set of character icon URLs",
+                  "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment"
+                },
+                "examples": [
+                  [
+                    "https://imgur.com/townsfolk.png",
+                    "https://imgur.com/townsfolk_evil.png"
+                  ],
+                  [
+                    "https://imgur.com/minion.png",
+                    "https://imgur.com/minion_good.png"
+                  ],
+                  [
+                    "https://imgur.com/traveler.png",
+                    "https://imgur.com/traveler_good.png",
+                    "https://imgur.com/traveler_evil.png"
+                  ]
+                ]
+              }
             ]
           },
           "team": {
