@@ -42,3 +42,4 @@ If you're interested in creating your own "homebrew" scripts or characters, ther
   ]
 }
 ```
+Note that most of these properties are optional and in fact a few of them (`jinxes`, `special`) will very rarely, if ever, be needed for Homebrew content and might be subject to change.
