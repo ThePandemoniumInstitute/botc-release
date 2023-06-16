@@ -104,12 +104,12 @@
               {
                 "type": "array",
                 "title": "Set of character icon URLs",
-                "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment"
+                "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment",
                 "minItems": 1,
                 "maxItems": 3,
                 "items": {
                   "type": "string",
-                  "format": "uri",
+                  "format": "uri"
                 },
                 "examples": [
                   [
@@ -279,16 +279,18 @@
                     "grimoire",
                     "pointing",
                     "ghost-votes",
-                    "distribute-roles"
+                    "distribute-roles",
+                    "bag-disabled"
                   ]
                 },
                 "type": {
                   "type": "string",
                   "title": "The integration type, where the feature will be used.",
-                  "description": "Currently supported values are: signal - during night signaling, ability - when clicking on the character token",
+                  "description": "Currently supported values are:\n signal - during night signaling,\n ability - when clicking on the character token,\n selection - during character selection",
                   "enum": [
                     "signal",
-                    "ability"
+                    "ability",
+                    "selection"
                   ]
                 },
                 "time": {
