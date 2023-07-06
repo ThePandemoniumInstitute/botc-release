@@ -280,7 +280,8 @@
                     "pointing",
                     "ghost-votes",
                     "distribute-roles",
-                    "bag-disabled"
+                    "bag-disabled",
+                    "bag-duplicate"
                   ]
                 },
                 "type": {
@@ -309,7 +310,7 @@
                 "global": {
                   "type": "string",
                   "title": "Global ability scope",
-                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used.",
+                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used. This does not work on Fabled, because they are not considered to be on the Script.",
                   "enum": [
                     "townsfolk",
                     "outsider",
