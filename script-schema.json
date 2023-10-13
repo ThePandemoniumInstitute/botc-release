@@ -271,6 +271,17 @@
                 "type"
               ],
               "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "The integration type, where the feature will be used.",
+                  "description": "Currently supported values are:\n signal - during night signaling,\n ability - when clicking on the character token,\n selection - during character selection,\n vote - during a vote",
+                  "enum": [
+                    "signal",
+                    "ability",
+                    "selection",
+                    "vote"
+                  ]
+                },
                 "name": {
                   "type": "string",
                   "title": "The feature name reference",
@@ -281,17 +292,22 @@
                     "ghost-votes",
                     "distribute-roles",
                     "bag-disabled",
-                    "bag-duplicate"
+                    "bag-duplicate",
+                    "multiplier"
                   ]
                 },
-                "type": {
-                  "type": "string",
-                  "title": "The integration type, where the feature will be used.",
-                  "description": "Currently supported values are:\n signal - during night signaling,\n ability - when clicking on the character token,\n selection - during character selection",
-                  "enum": [
-                    "signal",
-                    "ability",
-                    "selection"
+                "value": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "Special ability text value",
+                      "description": "The text value that will be used by the special ability."
+                    },
+                    {
+                      "type": "number",
+                      "title": "Special ability number value",
+                      "description": "The numeric value that will be used by the special ability."
+                    }
                   ]
                 },
                 "time": {
@@ -322,15 +338,20 @@
               },
               "examples": [
                 {
-                  "name": "grimoire",
                   "type": "signal",
+                  "name": "grimoire",
                   "time": "night"
                 },
                 {
-                  "name": "pointing",
                   "type": "ability",
+                  "name": "pointing",
                   "time": "night",
                   "global": "minion"
+                },
+                {
+                  "type": "vote",
+                  "name": "multiplier",
+                  "value": "3"
                 }
               ]
             }
