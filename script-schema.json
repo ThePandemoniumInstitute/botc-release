@@ -8,61 +8,6 @@
     "oneOf": [
       {
         "type": "object",
-        "title": "Script Metadata",
-        "required": [
-          "id",
-          "name"
-        ],
-        "properties": {
-          "id": {
-            "type": "string",
-            "title": "The ID property must be called '_meta' for the Script metadata object.",
-            "enum": ["_meta"]
-          },
-          "name": {
-            "type": "string",
-            "title": "The script name",
-            "examples": [
-              "Fall of Rome",
-              "My Custom Homebrew"
-            ]
-          },
-          "author": {
-            "type": "string",
-            "title": "The script author",
-            "examples": [
-              "The Pandemonium Institute",
-              "Your Name"
-            ]
-          },
-          "logo": {
-            "type": "string",
-            "format": "uri",
-            "title": "The script logo image",
-            "examples": [
-              "https://imgur.com/logo.png"
-            ]
-          },
-          "background": {
-            "type": "string",
-            "format": "uri",
-            "title": "The script background image",
-            "examples": [
-              "https://imgur.com/background.jpg"
-            ]
-          }
-        },
-        "examples": [
-          {
-            "id": "_meta",
-            "name": "Deadly Penance Day",
-            "author": "TPI",
-            "logo": "https://url.to/your/logo.png"
-          }
-        ]
-      },
-      {
-        "type": "object",
         "title": "Script Character",
         "required": [
           "id",
@@ -202,7 +147,7 @@
             "title": "Character reminder tokens",
             "items": {
               "type": "string",
-              "maxlength": 20,
+              "maxLength": 20,
               "examples": [
                 "Townsfolk",
                 "Wrong",
@@ -217,7 +162,7 @@
             "title": "Global character reminder tokens, which will be selectable even when the character is not in play.",
             "items": {
               "type": "string",
-              "maxlength": 20,
+              "maxLength": 20,
               "examples": [
                 "Drunk",
                 "Is The Philosopher"
@@ -274,12 +219,13 @@
                 "type": {
                   "type": "string",
                   "title": "The integration type, where the feature will be used.",
-                  "description": "Currently supported values are:\n signal - during night signaling,\n ability - when clicking on the character token,\n selection - during character selection,\n vote - during a vote",
+                  "description": "Currently supported values are:\n selection - during character selection,\n signal - during night signaling,\n ability - when clicking on the character token,\n vote - during a vote,\n reveal - at the end of the game, before characters are revealed",
                   "enum": [
-                    "signal",
-                    "ability",
                     "selection",
-                    "vote"
+                    "ability",
+                    "signal",
+                    "vote",
+                    "reveal"
                   ]
                 },
                 "name": {
@@ -293,7 +239,9 @@
                     "distribute-roles",
                     "bag-disabled",
                     "bag-duplicate",
-                    "multiplier"
+                    "multiplier",
+                    "hidden",
+                    "replace-character"
                   ]
                 },
                 "value": {
@@ -380,19 +328,86 @@
         "type": "string",
         "title": "Official character ID",
         "description": "If you want to include official characters in the script, it is sufficient to provide their ID as a string",
-        "examples": ["soldier", "imp", "washerwoman"]
+        "examples": [
+          "soldier",
+          "imp",
+          "washerwoman"
+        ]
+      },
+      {
+        "type": "object",
+        "title": "Script Metadata",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "The ID property must be called '_meta' for the Script metadata object.",
+            "enum": [
+              "_meta"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "The script name",
+            "examples": [
+              "Fall of Rome",
+              "My Custom Homebrew"
+            ]
+          },
+          "author": {
+            "type": "string",
+            "title": "The script author",
+            "examples": [
+              "The Pandemonium Institute",
+              "Your Name"
+            ]
+          },
+          "logo": {
+            "type": "string",
+            "format": "uri",
+            "title": "The script logo image",
+            "examples": [
+              "https://imgur.com/logo.png"
+            ]
+          },
+          "background": {
+            "type": "string",
+            "format": "uri",
+            "title": "The script background image",
+            "examples": [
+              "https://imgur.com/background.jpg"
+            ]
+          }
+        },
+        "examples": [
+          {
+            "id": "_meta",
+            "name": "Deadly Penance Day",
+            "author": "TPI",
+            "logo": "https://url.to/your/logo.png"
+          }
+        ]
       },
       {
         "type": "object",
         "title": "Official Character (deprecated)",
         "deprecated": true,
-        "required": ["id"],
+        "required": [
+          "id"
+        ],
         "additionalProperties": false,
         "properties": {
           "id": {
             "type": "string",
             "title": "Official character ID",
-            "examples": ["soldier", "imp", "washerwoman"]
+            "examples": [
+              "soldier",
+              "imp",
+              "washerwoman"
+            ]
           }
         }
       }
