@@ -71,39 +71,39 @@ The available special app features are listed below, grouped by their `type`.
 
 This type modifies how the character selection process at the beginning of the game works.
 
-- **Name: `bag-disabled`:** This character can't be selected to go into the bag. (to be distributed to the players) **Example:** Drunk, Marionette
-- **Name: `bag-duplicate`:** This character can be added more than once to the bag. (to be distributed to the players) **Example:** Legion, Riot
+- **Name: `bag-disabled`:** This character can't be selected to go into the bag. (to be distributed to the players) <br>**Example:** Drunk, Marionette
+- **Name: `bag-duplicate`:** This character can be added more than once to the bag. (to be distributed to the players) <br>**Example:** Legion, Riot
 
 #### Type: `ability`
 
 This type allows the Storyteller to activate a special character ability, like returning all ghost vote tokens or allowing players to point at another player.
 All abilities can be modified by the `time` and `global` parameters.
 
-- **Name: `pointing`:** Starts a "point at a player" type of special vote, which allows some or all players to democratically choose a player. **Example:** Boomdandy, Fiddler
-- **Name: `ghost-votes`:** This ability returns all spent ghost votes to dead players. **Example:** Ferryman
-- **Name: `distribute-roles`:** This ability sends out the currently assigned characters to all players. **Example:** Gardener
+- **Name: `pointing`:** Starts a "point at a player" type of special vote, which allows some or all players to democratically choose a player. <br>**Example:** Boomdandy, Fiddler
+- **Name: `ghost-votes`:** This ability returns all spent ghost votes to dead players. <br>**Example:** Ferryman
+- **Name: `distribute-roles`:** This ability sends out the currently assigned characters to all players. <br>**Example:** Gardener
 
 #### Type: `signal`
 
 This type allows the Storyteller to send a player special information through the night "wake" interface. 
 Can be modified by the `time` parameter.
 
-- **Name: `grimoire`:** Send a copy of the Grimoire to the player. The grimoire copy can be modified before being sent. **Example:** Spy, Widow
+- **Name: `grimoire`:** Send a copy of the Grimoire to the player. The grimoire copy can be modified before being sent. <br>**Example:** Spy, Widow
 
 #### Type: `vote`
 
 This type modifies how the nomination or vote is being run.
 
-- **Name: `hidden`:** The vote will be run in secret. (only the Storyteller can see the results) **Example:** Organ Grinder
-- **Name: `multiplier`:** Assigning any reminder token of this character to a player will modify their vote count with a multiplier. Requires a `value` to define the multiplier. **Example:** Bureaucrat, Thief
+- **Name: `hidden`:** The vote will be run in secret. (only the Storyteller can see the results) <br>**Example:** Organ Grinder
+- **Name: `multiplier`:** Assigning any reminder token of this character to a player will modify their vote count with a multiplier. Requires a `value` to define the multiplier. <br>**Example:** Bureaucrat, Thief
 
 #### Type: `reveal`
 
 This type modifies what happens when the game ends, right before the character reveal.
 
-- **Name: `replace-character`:** Assigning the _first `remindersGlobal` reminder token_ (e.g. "Is the Philosopher) to a player will replace their current character with this one when the game ends.  **Example:** Drunk, Philosopher
+- **Name: `replace-character`:** Assigning the _first `remindersGlobal` reminder token_ (e.g. "Is the Philosopher) to a player will replace their current character with this one when the game ends.  <br>**Example:** Drunk, Philosopher
 
-#### Optional properties (`time`, `value`, `global`)
+#### Optional properties: `time`, `value`, `global`
 
 - **Property `time`:** This property limits when a specific ability or effect can be used. Currently only works on `ability` and `signal` type of effects. Possible values:
   - "pregame"
