@@ -101,7 +101,7 @@ This type modifies how the nomination or vote is being run.
 
 This type modifies what happens when the game ends, right before the character reveal.
 
-- **Name: `replace-character`:** Assigning the _first `globalReminder` reminder token_ (e.g. "Is the Philosopher) to a player will replace their current character with this one when the game ends.  **Example:** Drunk, Philosopher
+- **Name: `replace-character`:** Assigning the _first `remindersGlobal` reminder token_ (e.g. "Is the Philosopher) to a player will replace their current character with this one when the game ends.  **Example:** Drunk, Philosopher
 
 #### Optional properties (`time`, `value`, `global`)
 
