@@ -60,3 +60,58 @@ If you're interested in creating your own "homebrew" scripts or characters, ther
 }
 ```
 Note that most of these properties are optional and in fact a few of them (`jinxes`, `special`) will very rarely, if ever, be needed for Homebrew content and might be subject to change.
+
+### Special App Features
+
+Homebrew characters can use some of the app features through the `special` property, which contains an array of each special app feature that this character will use.
+Each of these `special` features requires a `type` and `name` property, at the very least. Some of them also need a `value`, `time` or `global` property or any combination of them.
+The available special app features are listed below, grouped by their `type`.
+
+#### Type: `selection`
+
+This type modifies how the character selection process at the beginning of the game works.
+
+- **Name: `bag-disabled`:** This character can't be selected to go into the bag. (to be distributed to the players) **Example:** Drunk, Marionette
+- **Name: `bag-duplicate`:** This character can be added more than once to the bag. (to be distributed to the players) **Example:** Legion, Riot
+
+#### Type: `ability`
+
+This type allows the Storyteller to activate a special character ability, like returning all ghost vote tokens or allowing players to point at another player.
+All abilities can be modified by the `time` and `global` parameters.
+
+- **Name: `pointing`:** Starts a "point at a player" type of special vote, which allows some or all players to democratically choose a player. **Example:** Boomdandy, Fiddler
+- **Name: `ghost-votes`:** This ability returns all spent ghost votes to dead players. **Example:** Ferryman
+- **Name: `distribute-roles`:** This ability sends out the currently assigned characters to all players. **Example:** Gardener
+
+#### Type: `signal`
+
+This type allows the Storyteller to send a player special information through the night "wake" interface. 
+Can be modified by the `time` parameter.
+
+- **Name: `grimoire`:** Send a copy of the Grimoire to the player. The grimoire copy can be modified before being sent. **Example:** Spy, Widow
+
+#### Type: `vote`
+
+This type modifies how the nomination or vote is being run.
+
+- **Name: `hidden`:** The vote will be run in secret. (only the Storyteller can see the results) **Example:** Organ Grinder
+- **Name: `multiplier`:** Assigning any reminder token of this character to a player will modify their vote count with a multiplier. Requires a `value` to define the multiplier. **Example:** Bureaucrat, Thief
+
+#### Type: `reveal`
+
+This type modifies what happens when the game ends, right before the character reveal.
+
+- **Name: `replace-character`:** Assigning the _first `globalReminder` reminder token_ (e.g. "Is the Philosopher) to a player will replace their current character with this one when the game ends.  **Example:** Drunk, Philosopher
+
+#### Optional properties (`time`, `value`, `global`)
+
+- **Property `time`:** This property limits when a specific ability or effect can be used. Currently only works on `ability` and `signal` type of effects. Possible values:
+  - "pregame"
+  - "day"
+  - "night"
+  - "firstNight"
+  - "firstDay"
+  - "otherNight"
+  - "otherDay"
+- **Property `value`:** Can be a Number or String that is used as a parameter for a special ability or effect.
+- **Property `global`:** An awkward compromise to allow Lil'Monsta to work when it is not in play. Currently defines what kind of characters have the special ability as long as this character is on the script. I'd probably not use this if I were you, because it might be subject to change if I can think of a better way to make Lil'Monsta work. Can contain any character type value. ("townsfolk", "outsider", "minion", "demon", "traveler")
