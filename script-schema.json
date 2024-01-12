@@ -241,7 +241,9 @@
                     "bag-duplicate",
                     "multiplier",
                     "hidden",
-                    "replace-character"
+                    "replace-character",
+                    "player",
+                    "card"
                   ]
                 },
                 "value": {
@@ -289,6 +291,11 @@
                   "type": "signal",
                   "name": "grimoire",
                   "time": "night"
+                },
+                {
+                  "type": "signal",
+                  "name": "card",
+                  "value": "This is a Custom ST Card"
                 },
                 {
                   "type": "ability",
