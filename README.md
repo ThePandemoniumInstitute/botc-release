@@ -89,6 +89,8 @@ This type allows the Storyteller to send a player special information through th
 Can be modified by the `time` parameter.
 
 - **Name: `grimoire`:** Send a copy of the Grimoire to the player. The grimoire copy can be modified before being sent. <br>**Example:** Spy, Widow
+- **Name: `card`:** Send a pre-defined custom Storyteller card to a player with this character. Requires a `value` to contain the card text.
+- **Name: `player`:** Allows a player with this character to send a pre-defined custom response to the Storyteller. Requires a `value` to contain the response text.
 
 #### Type: `vote`
 
