@@ -71,7 +71,7 @@ body:
     id: logs
     attributes:
       label: Relevant console log output
-      description: "Please copy and paste any relevant browser console log output. To open the console on Windows/Linux: Shift + CTRL + J, on Mac: Option + ⌘ + J or Option + ⌘ + C"
+      description: "Please copy and paste any relevant browser console log output.\nTo open the console on Windows/Linux: Shift + CTRL + J, on Mac: Option + ⌘ + J or Option + ⌘ + C"
       render: shell
   - type: markdown
     attributes:
