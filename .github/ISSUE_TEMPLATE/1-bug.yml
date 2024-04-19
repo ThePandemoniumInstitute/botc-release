@@ -6,8 +6,7 @@ projects: ["ThePandemoniumInstitute/botc-release"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report! Be sure to include as many details as possible, to help us fix this bug faster.
+      value: "Thanks for taking the time to fill out this bug report! Be sure to include as many details as possible, to help us fix this bug faster."
   - type: textarea
     id: description
     attributes:
