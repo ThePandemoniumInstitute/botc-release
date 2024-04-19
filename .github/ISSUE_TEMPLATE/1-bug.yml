@@ -13,7 +13,6 @@ body:
       label: Description
       description: Describe the bug! What went wrong and how? What did you expect to happen?
       placeholder: A clear and concise description of what the bug is.
-      value: "A bug happened!"
     validations:
       required: true
   - type: textarea
