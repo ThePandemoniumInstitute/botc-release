@@ -75,4 +75,4 @@ body:
       render: shell
   - type: markdown
     attributes:
-    value: Please attach any screenshots or recordings of the bug you might have. Those will help us a lot to figure out what exactly caused it.
+      value: Please attach any screenshots or recordings of the bug you might have. Those will help us a lot to figure out what exactly caused it.
