@@ -1,0 +1,79 @@
+name: App Bug Report
+description: File an app bug report.
+title: "[BUG]: "
+labels: ["bug", "triage"]
+projects: ["ThePandemoniumInstitute/botc-release"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Be sure to include as many details as possible, to help us fix this bug faster.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug! What went wrong and how? What did you expect to happen?
+      placeholder: A clear and concise description of what the bug is.
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: steps-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Also tell us, how can we reproduce this bug?
+      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+    validations:
+      required: false
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Where is the app running?
+      options:
+        - Chrome
+        - Firefox
+        - Microsoft Edge
+        - Safari
+        - Opera
+        - Standalone app
+        - Other (specify in comments)
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: What operating system are you using?
+      options:
+        - Windows
+        - Linux
+        - Mac
+        - Android
+        - iOS
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date and Time
+      description: "When did the bug happen? Don't forget to specifiy the timezone!"
+      placeholder: April 2nd, 2PM GMT
+    validations:
+      required: true
+  - type: input
+    id: session
+    attributes:
+      label: Game Session
+      description: In which game session did it happen?
+      placeholder: "#game-session-code"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant console log output
+      description: Please copy and paste any relevant browser console log output. To open the console on Windows/Linux: Shift + CTRL + J, on Mac: Option + ⌘ + J or Option + ⌘ + C
+      render: shell
+  - type: markdown
+    attributes:
+    value: Please attach any screenshots or recordings of the bug you might have. Those will help us a lot to figure out what exactly caused it.
