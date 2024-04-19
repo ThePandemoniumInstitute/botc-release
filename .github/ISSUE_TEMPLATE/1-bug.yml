@@ -12,7 +12,7 @@ body:
     attributes:
       label: Description
       description: Describe the bug! What went wrong and how? What did you expect to happen?
-      placeholder: "I was unable to select the Orthodontist character token when setting up a new game in session #orthofuntist"
+      placeholder: "I was unable to [...] when playing in session [...].\nWhen I clicked on [...] instead of [...] the app did [...]."
     validations:
       required: true
   - type: textarea
