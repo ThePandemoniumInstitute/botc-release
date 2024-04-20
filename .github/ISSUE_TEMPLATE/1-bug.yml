@@ -1,6 +1,6 @@
 name: App Bug Report
 description: File an app bug report.
-title: "[BUG]: "
+title: "[BUG] "
 labels: ["bug", "triage"]
 projects: ["ThePandemoniumInstitute/botc-release"]
 body:
