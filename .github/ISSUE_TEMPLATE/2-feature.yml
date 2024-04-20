@@ -1,6 +1,6 @@
 name: App Feature Suggestion
 description: Suggest a new feature for the app.
-title: "[FEATURE]: "
+title: "[FEATURE] "
 labels: ["feature", "triage"]
 projects: ["ThePandemoniumInstitute/botc-release"]
 body:
