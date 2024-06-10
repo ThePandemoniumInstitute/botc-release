@@ -147,7 +147,8 @@
             "title": "Character reminder tokens",
             "items": {
               "type": "string",
-              "maxLength": 20,
+              "maxItems": 20,
+              "maxLength": 25,
               "examples": [
                 "Townsfolk",
                 "Wrong",
@@ -162,7 +163,8 @@
             "title": "Global character reminder tokens, which will be selectable even when the character is not in play.",
             "items": {
               "type": "string",
-              "maxLength": 20,
+              "maxItems": 20,
+              "maxLength": 25,
               "examples": [
                 "Drunk",
                 "Is The Philosopher"
