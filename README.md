@@ -9,6 +9,7 @@ Depending on your operating system, you have to select the correct file:
 - **Mac (M1 or newer):** Blood.on.the.Clocktower.Online_[version]_aarch64.dmg
 - **Mac (Intel):** Blood.on.the.Clocktower.Online_[version]_x64.dmg
 - **Linux:** Blood.on.the.Clocktower.Online_[version]_amd64.AppImage
+  - ⚠️ The Linux standalone version currently does not support microphone / camera chat, unfortunately. This will be fixed in a future update.
 
 ## Custom scripts
 Your custom (and homebrew) scripts can be augmented with "meta data" to improve the play experience and make it easier for your players to see what script exactly is being played. In order to do this, just add a `meta` entry to your custom script JSON, with the following (optional) properties:
