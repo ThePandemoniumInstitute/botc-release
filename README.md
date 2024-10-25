@@ -22,7 +22,9 @@ Your custom (and homebrew) scripts can be augmented with "meta data" to improve 
     "name": "Your Custom Script Name",
     "author": "Your Name",
     "logo": "https://i.imgur.com/logo.png",
-    "background": "https://i.imgur.com/background-image.jpg"
+    "background": "https://i.imgur.com/background-image.jpg",
+    "firstNight": ["dusk","minioninfo", "demoninfo","poisoner","...","dawn"],
+    "otherNight": ["dusk","poisoner","...","dawn"]
   }
 ```
 
