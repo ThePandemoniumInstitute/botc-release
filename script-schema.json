@@ -20,6 +20,7 @@
           "id": {
             "type": "string",
             "title": "Character ID, alphanumeric lowercase",
+            "maxLength": 50,
             "examples": [
               "washerwoman",
               "lilmonsta",
@@ -89,6 +90,7 @@
           "edition": {
             "type": "string",
             "title": "The edition ID",
+            "maxLength": 50,
             "examples": [
               "tb",
               "bmr",
@@ -99,6 +101,7 @@
           "ability": {
             "type": "string",
             "title": "Character ability",
+            "maxLength": 250,
             "examples": [
               "You start knowing that 1 of 2 players is a particular Townsfolk.",
               "Each night, Minions choose who babysits Lil' Monsta's token \u0026 \"is the Demon\". A player dies each night*. [+1 Minion]",
@@ -108,6 +111,7 @@
           "flavor": {
             "type": "string",
             "title": "Character flavor text",
+            "maxLength": 500,
             "examples": [
               "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
               "Certainly madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
@@ -126,6 +130,7 @@
           "firstNightReminder": {
             "type": "string",
             "title": "First night Storyteller reminder",
+            "maxLength": 500,
             "examples": [
               "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
               "Wake all Minions, allow them to choose a babysitter :reminder:",
@@ -144,6 +149,7 @@
           "otherNightReminder": {
             "type": "string",
             "title": "Other nights Storyteller reminder",
+            "maxLength": 500,
             "examples": [
               "",
               "Wake all Minions, allow them to choose a babysitter :reminder: A player might die :reminder:",
@@ -199,6 +205,7 @@
                 "id": {
                   "type": "string",
                   "title": "The ID of the other character this one is jinxed with.",
+                  "maxLength": 20,
                   "examples": [
                     "spy",
                     "fanggu",
@@ -208,6 +215,7 @@
                 "reason": {
                   "type": "string",
                   "title": "The Jinx explanation",
+                  "maxLength": 500,
                   "examples": [
                     "If the Cannibal gains the Butler ability, the Cannibal learns this.",
                     "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
@@ -262,6 +270,7 @@
                     {
                       "type": "string",
                       "title": "Special ability text value",
+                      "maxLength": 50,
                       "description": "The text value that will be used by the special ability."
                     },
                     {
@@ -346,6 +355,7 @@
       {
         "type": "string",
         "title": "Official character ID",
+        "maxLength": 20,
         "description": "If you want to include official characters in the script, it is sufficient to provide their ID as a string",
         "examples": [
           "soldier",
@@ -371,6 +381,7 @@
           "name": {
             "type": "string",
             "title": "The script name",
+            "maxLength": 50,
             "examples": [
               "Fall of Rome",
               "My Custom Homebrew"
@@ -379,6 +390,7 @@
           "author": {
             "type": "string",
             "title": "The script author",
+            "maxLength": 50,
             "examples": [
               "The Pandemonium Institute",
               "Your Name"
@@ -387,6 +399,7 @@
           "logo": {
             "type": "string",
             "format": "uri",
+            "maxLength": 250,
             "title": "The script logo image",
             "examples": [
               "https://imgur.com/logo.png"
@@ -395,6 +408,7 @@
           "background": {
             "type": "string",
             "format": "uri",
+            "maxLength": 250,
             "title": "The script background image",
             "examples": [
               "https://imgur.com/background.jpg"
@@ -404,6 +418,7 @@
             "type": "array",
             "title": "The relative First Night order of characters on this script.",
             "description": "A custom first night order for this script can be provided in the form of an array here, with optional special entries for 'dusk', 'minioninfo', 'demoninfo' and 'dawn'.",
+            "maxItems": 30,
             "items": {
               "type": "string",
               "title": "Character ID of an on-script character in the first night order"
@@ -430,6 +445,7 @@
             "type": "array",
             "title": "The relative Other Nights order of characters on this script.",
             "description": "A custom other night order for this script can be provided in the form of an array here, with optional special entries for 'dusk' and 'dawn'.",
+            "maxItems": 30,
             "items": {
               "type": "string",
               "title": "Character ID of an on-script character in the other night order"
@@ -472,6 +488,7 @@
         "properties": {
           "id": {
             "type": "string",
+            "maxLength": 20,
             "title": "Official character ID",
             "examples": [
               "soldier",
