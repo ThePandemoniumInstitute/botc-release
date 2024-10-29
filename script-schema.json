@@ -205,7 +205,7 @@
                 "id": {
                   "type": "string",
                   "title": "The ID of the other character this one is jinxed with.",
-                  "maxLength": 20,
+                  "maxLength": 50,
                   "examples": [
                     "spy",
                     "fanggu",
