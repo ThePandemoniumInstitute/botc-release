@@ -30,7 +30,7 @@
           "name": {
             "type": "string",
             "title": "Character name",
-            "maxLength": 20,
+            "maxLength": 30,
             "examples": [
               "Washer Woman",
               "Lil' Monsta",
@@ -163,7 +163,7 @@
             "title": "Character reminder tokens",
             "items": {
               "type": "string",
-              "maxLength": 25,
+              "maxLength": 30,
               "examples": [
                 "Townsfolk",
                 "Wrong",
