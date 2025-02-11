@@ -2,7 +2,8 @@ name: App Bug Report
 description: File an app bug report.
 title: "[BUG] "
 labels: ["bug", "triage"]
-projects: ["ThePandemoniumInstitute/botc-release"]
+type: "bug"
+projects: "ThePandemoniumInstitute/projects/2"
 body:
   - type: markdown
     attributes:
