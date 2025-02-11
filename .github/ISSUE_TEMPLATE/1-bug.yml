@@ -3,7 +3,7 @@ description: File an app bug report.
 title: "[BUG] "
 labels: ["bug", "triage"]
 type: "bug"
-projects: "ThePandemoniumInstitute/projects/2"
+projects: "ThePandemoniumInstitute/2"
 body:
   - type: markdown
     attributes:
