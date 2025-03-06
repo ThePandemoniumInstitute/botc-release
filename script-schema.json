@@ -50,7 +50,7 @@
               {
                 "type": "array",
                 "title": "Set of character icon URLs",
-                "description": "For non-traveler characters, the icons should be regular alignment and flipped alignment, for travelers they should be unaligned, good alignment and evil alignment",
+                "description": "For non-traveller characters, the icons should be regular alignment and flipped alignment, for travellers they should be unaligned, good alignment and evil alignment",
                 "minItems": 1,
                 "maxItems": 3,
                 "items": {
@@ -67,9 +67,9 @@
                     "https://imgur.com/minion_good.png"
                   ],
                   [
-                    "https://imgur.com/traveler.png",
-                    "https://imgur.com/traveler_good.png",
-                    "https://imgur.com/traveler_evil.png"
+                    "https://imgur.com/traveller.png",
+                    "https://imgur.com/traveller_good.png",
+                    "https://imgur.com/traveller_evil.png"
                   ]
                 ]
               }
@@ -83,7 +83,7 @@
               "outsider",
               "minion",
               "demon",
-              "traveler",
+              "traveller",
               "fabled"
             ]
           },
@@ -302,7 +302,7 @@
                     "outsider",
                     "minion",
                     "demon",
-                    "traveler"
+                    "traveller"
                   ]
                 }
               },
