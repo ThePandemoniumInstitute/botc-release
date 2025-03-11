@@ -1,0 +1,38 @@
+[
+  {
+    "id": "_meta",
+    "author": "Ascarywizard",
+    "name": "I see dead people",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/deadpeople/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up."
+    ]
+  },
+  "soldier",
+  "banshee",
+  "oracle",
+  "snakecharmer",
+  "fortuneteller",
+  "chambermaid",
+  "dreamer",
+  "empath",
+  "professor",
+  "sage",
+  "courtier",
+  "philosopher",
+  "pacifist",
+  "sweetheart",
+  "damsel",
+  "recluse",
+  "mutant",
+  "poisoner",
+  "mastermind",
+  "devilsadvocate",
+  "baron",
+  "fanggu",
+  "imp",
+  "harlot",
+  "scapegoat",
+  "djinn"
+]

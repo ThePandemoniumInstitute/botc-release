@@ -1,0 +1,42 @@
+[
+  {
+    "id": "_meta",
+    "name": "The Djinn's Bargain",
+    "author": "phillyCHEEEEEZ",
+    "logo": "http://localhost:8080/src/assets/wc25/djinnsbargain/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Nominators may choose to die after making a nomination. If they do, their nominee's ability works twice until dusk tomorrow."
+    ]
+  },
+  "chef",
+  "investigator",
+  "clockmaker",
+  "librarian",
+  "balloonist",
+  "preacher",
+  "fortuneteller",
+  "dreamer",
+  "innkeeper",
+  "exorcist",
+  "fisherman",
+  "alchemist",
+  "ravenkeeper",
+  "goon",
+  "drunk",
+  "barber",
+  "snitch",
+  "witch",
+  "assassin",
+  "xaan",
+  "marionette",
+  "pukka",
+  "nodashii",
+  "ojo",
+  "po",
+  "butcher",
+  "bonecollector",
+  "judge",
+  "apprentice",
+  "scapegoat"
+]

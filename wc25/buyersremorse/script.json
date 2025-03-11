@@ -1,0 +1,36 @@
+[
+  {
+    "author": "mist",
+    "name": "Buyer's Remorse",
+    "id": "_meta",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/buyersremorse/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Players have 7 gold. Each day, an ability is auctioned; highest unique bidder gains it until dawn, even if dead. Bids are not returned (bar evil ties) & secret."
+    ]
+  },
+  "noble",
+  "shugenja",
+  "pixie",
+  "villageidiot",
+  "snakecharmer",
+  "dreamer",
+  "undertaker",
+  "engineer",
+  "nightwatchman",
+  "seamstress",
+  "fisherman",
+  "ravenkeeper",
+  "mayor",
+  "recluse",
+  "golem",
+  "barber",
+  "puzzlemaster",
+  "harpy",
+  "psychopath",
+  "xaan",
+  "goblin",
+  "nodashii",
+  "imp",
+  "lleech"
+]

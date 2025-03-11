@@ -1,0 +1,37 @@
+[
+  {
+    "id": "_meta",
+    "author": "JC",
+    "name": "This Is Not My Beautiful House",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/beautifulhouse/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "The Amnesiac is considered an Outsider character type."
+    ]
+  },
+  "grandmother",
+  "shugenja",
+  "empath",
+  "sailor",
+  "balloonist",
+  "mathematician",
+  "towncrier",
+  "monk",
+  "gambler",
+  "exorcist",
+  "gossip",
+  "amnesiac",
+  "ravenkeeper",
+  "pacifist",
+  "tinker",
+  "recluse",
+  "puzzlemaster",
+  "godfather",
+  "poisoner",
+  "devilsadvocate",
+  "marionette",
+  "yaggababble",
+  "pukka",
+  "imp",
+  "vigormortis"
+]

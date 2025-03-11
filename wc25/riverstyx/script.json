@@ -1,0 +1,38 @@
+[
+  {
+    "id": "_meta",
+    "author": "Rhea",
+    "name": "The River Styx",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/riverstyx/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token."
+    ]
+  },
+  "investigator",
+  "shugenja",
+  "pixie",
+  "general",
+  "fortuneteller",
+  "towncrier",
+  "savant",
+  "fisherman",
+  "cannibal",
+  "amnesiac",
+  "farmer",
+  "mayor",
+  "magician",
+  "lunatic",
+  "drunk",
+  "recluse",
+  "damsel",
+  "mezepheles",
+  "poisoner",
+  "fearmonger",
+  "scarletwoman",
+  "baron",
+  "imp",
+  "ojo",
+  "vigormortis",
+  "ferryman"
+]

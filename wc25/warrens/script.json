@@ -1,0 +1,38 @@
+[
+  {
+    "id": "_meta",
+    "author": "Zets",
+    "name": "The Warrens",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/binarysupernovae/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "If 5 or more players live, evil players who nominate other living evil players (not Travellers) immediately swap characters."
+    ]
+  },
+  "shugenja",
+  "pixie",
+  "balloonist",
+  "fortuneteller",
+  "towncrier",
+  "undertaker",
+  "savant",
+  "artist",
+  "juggler",
+  "amnesiac",
+  "ravenkeeper",
+  "mayor",
+  "poppygrower",
+  "ogre",
+  "lunatic",
+  "saint",
+  "puzzlemaster",
+  "harpy",
+  "cerenovus",
+  "assassin",
+  "widow",
+  "nodashii",
+  "kazali",
+  "ojo",
+  "legion",
+  "spiritofivory"
+]

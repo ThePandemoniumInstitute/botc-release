@@ -1,0 +1,36 @@
+[
+  {
+    "id": "_meta",
+    "author": "Ember",
+    "name": "Council of the Dead",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/deadcouncil/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon."
+    ]
+  },
+  "librarian",
+  "shugenja",
+  "fortuneteller",
+  "towncrier",
+  "oracle",
+  "monk",
+  "savant",
+  "alsaahir",
+  "philosopher",
+  "huntsman",
+  "fisherman",
+  "soldier",
+  "mayor",
+  "drunk",
+  "recluse",
+  "mutant",
+  "damsel",
+  "mezepheles",
+  "cerenovus",
+  "summoner",
+  "baron",
+  "imp",
+  "vigormortis",
+  "vortox"
+]

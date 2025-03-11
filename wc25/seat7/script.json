@@ -1,0 +1,37 @@
+[
+  {
+    "id": "_meta",
+    "author": "TrashWarlock",
+    "name": "The Ballad of Seat 7",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/seat7/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on it's behalf."
+    ]
+  },
+  "noble",
+  "washerwoman",
+  "librarian",
+  "balloonist",
+  "fortuneteller",
+  "dreamer",
+  "seamstress",
+  "fisherman",
+  "soldier",
+  "farmer",
+  "mayor",
+  "virgin",
+  "magician",
+  "drunk",
+  "recluse",
+  "saint",
+  "barber",
+  "damsel",
+  "pithag",
+  "boomdandy",
+  "scarletwoman",
+  "boffin",
+  "nodashii",
+  "vigormortis",
+  "fanggu"
+]

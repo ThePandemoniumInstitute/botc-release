@@ -1,0 +1,36 @@
+[
+  {
+    "id": "_meta",
+    "author": "Hystrex",
+    "name": "Binary Supernovae",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/binarysupernovae/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "If a Demon dies by execution, good wins. Summoner only removes 1 Demon. [+1 Demon]"
+    ]
+  },
+  "chef",
+  "grandmother",
+  "shugenja",
+  "empath",
+  "fortuneteller",
+  "oracle",
+  "innkeeper",
+  "gambler",
+  "exorcist",
+  "seamstress",
+  "philosopher",
+  "soldier",
+  "magician",
+  "butler",
+  "tinker",
+  "sweetheart",
+  "moonchild",
+  "assassin",
+  "xaan",
+  "summoner",
+  "mastermind",
+  "pukka",
+  "imp",
+  "ojo"
+]

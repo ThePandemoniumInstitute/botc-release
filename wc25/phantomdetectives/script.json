@@ -1,0 +1,39 @@
+[
+  {
+    "id": "_meta",
+    "author": "Schnauzer",
+    "name": "The Phantom Detectives",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/stowedaway/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Dead players (not Demons) keep their abliities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
+    ]
+  },
+  "steward",
+  "knight",
+  "noble",
+  "shugenja",
+  "highpriestess",
+  "dreamer",
+  "cultleader",
+  "oracle",
+  "engineer",
+  "nightwatchman",
+  "seamstress",
+  "huntsman",
+  "banshee",
+  "plaguedoctor",
+  "klutz",
+  "saint",
+  "damsel",
+  "witch",
+  "wizard",
+  "organgrinder",
+  "boffin",
+  "yaggababble",
+  "imp",
+  "vigormortis",
+  "fanggu",
+  "djinn",
+  "fibbin"
+]

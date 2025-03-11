@@ -1,0 +1,31 @@
+[
+  {
+    "id": "_meta",
+    "author": "Nick B",
+    "name": "Witch Hunt",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/witchhunt/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "All Minions are Witches. Nominated Demons can not move tonight."
+    ]
+  },
+  "steward",
+  "noble",
+  "librarian",
+  "shugenja",
+  "empath",
+  "balloonist",
+  "general",
+  "fortuneteller",
+  "towncrier",
+  "lycanthrope",
+  "alsaahir",
+  "seamstress",
+  "huntsman",
+  "drunk",
+  "recluse",
+  "damsel",
+  "snitch",
+  "witch",
+  "lilmonsta"
+]

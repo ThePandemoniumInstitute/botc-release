@@ -1,0 +1,40 @@
+[
+  {
+    "id": "_meta",
+    "author": "Robe",
+    "name": "One Day More",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/1daymore/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Signal Failure: There is a 24 hour delay impacting all characters with abilities that know or learn information."
+    ]
+  },
+  "chef",
+  "librarian",
+  "highpriestess",
+  "general",
+  "villageidiot",
+  "fortuneteller",
+  "dreamer",
+  "towncrier",
+  "savant",
+  "nightwatchman",
+  "philosopher",
+  "artist",
+  "sage",
+  "recluse",
+  "mutant",
+  "damsel",
+  "puzzlemaster",
+  "poisoner",
+  "witch",
+  "cerenovus",
+  "widow",
+  "xaan",
+  "lilmonsta",
+  "imp",
+  "fanggu",
+  "harlot",
+  "beggar",
+  "gnome"
+]

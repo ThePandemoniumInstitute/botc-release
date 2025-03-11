@@ -1,0 +1,37 @@
+[
+  {
+    "id": "_meta",
+    "author": "Ekin",
+    "name": "Trained Killer",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/trainedkiller/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "Each night*, the Demon attacks the next living in-play character(s) in script order. Characters who survive might get reattacked."
+    ]
+  },
+  "mayor",
+  "villageidiot",
+  "artist",
+  "lycanthrope",
+  "ravenkeeper",
+  "monk",
+  "fortuneteller",
+  "seamstress",
+  "pixie",
+  "steward",
+  "king",
+  "choirboy",
+  "amnesiac",
+  "snitch",
+  "recluse",
+  "ogre",
+  "drunk",
+  "poisoner",
+  "spy",
+  "harpy",
+  "xaan",
+  "boffin",
+  "wizard",
+  "yaggababble",
+  "lilmonsta"
+]

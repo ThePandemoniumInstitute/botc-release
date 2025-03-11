@@ -1,0 +1,36 @@
+[
+  {
+    "id": "_meta",
+    "author": "Crispy Duck",
+    "name": "Off to see the Wizard",
+    "logo": "https://thepandemoniuminstitute.github.io/botc-releases/wc25/offwizard/logo.webp",
+    "hideTitle": true,
+    "bootlegger": [
+      "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made."
+    ]
+  },
+  "chef",
+  "noble",
+  "clockmaker",
+  "librarian",
+  "highpriestess",
+  "acrobat",
+  "savant",
+  "nightwatchman",
+  "artist",
+  "cannibal",
+  "amnesiac",
+  "farmer",
+  "ravenkeeper",
+  "sweetheart",
+  "hatter",
+  "mutant",
+  "politician",
+  "wizard",
+  "xaan",
+  "boomdandy",
+  "scarletwoman",
+  "pukka",
+  "imp",
+  "kazali"
+]
