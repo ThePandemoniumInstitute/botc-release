@@ -606,7 +606,7 @@
       "channel": 6,
       "time": 1641899600000,
       "timeORG": 1741896000000,
-      "winner": 0
+      "winner": null
     },
     {
       "scripts": [
