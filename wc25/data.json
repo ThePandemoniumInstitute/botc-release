@@ -542,56 +542,56 @@
   "channels": [
     {
       "name": "TPI Wednesday Stream",
-      "logo": "/src/assets/wc25/tpi-wed.webp",
+      "logo": "https://release.botc.app/wc25/tpi-wed.webp",
       "url": "https://www.twitch.tv/thepandemoniuminstitute",
       "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
       "time": "Wednesdays 7pm AEDT / 8am UK"
     },
     {
       "name": "Noobs on the Gooftower",
-      "logo": "/src/assets/wc25/notg.webp",
+      "logo": "https://release.botc.app/wc25/notg.webp",
       "url": "https://www.youtube.com/@NoobsontheGooftower",
       "description": "Noobs on the Gooftower is a lively crew of funny people playing Blood on the Clocktower with an emphasis on fun over winning. We stream every Tuesday at 2pm Pacific unless our host Chris Grace has a job, which is not very often!",
       "time": "Tuesdays 2pm Pacific / 9pm UK"
     },
     {
       "name": "Grim Scenarios",
-      "logo": "/src/assets/wc25/grimscenarios.webp",
+      "logo": "https://release.botc.app/wc25/grimscenarios.webp",
       "url": "https://www.twitch.tv/grimscenarios",
       "description": "Grim Scenarios welcomes Blood on the Clocktower players and other gamers alike to join our community, where inclusivity and kindness are at the heart of everything we do. Whether you're a seasoned player or trying to figure out what the heck is going on (or maybe both!) everyone can enjoy playing games and learning together.",
       "time": "Tuesdays 8pm EDT / Midnight UK"
     },
     {
       "name": "GenCon",
-      "logo": "/src/assets/wc25/gencon.webp",
+      "logo": "https://release.botc.app/wc25/gencon.webp",
       "url": "https://www.twitch.tv/gencontv",
       "description": "description",
       "time": "Sunday 8am AEDT"
     },
     {
       "name": "The Grimoire",
-      "logo": "/src/assets/wc25/thegrim.webp",
+      "logo": "https://release.botc.app/wc25/thegrim.webp",
       "url": "https://www.twitch.tv/thegrimgg",
       "description": "The Grimoire is a community focused on offering as many people the chance to experience Blood on the Clocktower as possible! We currently run curated events in both US and EU timezones, with many focused on teaching the game to new players.",
       "time": "Saturday 1pm PST"
     },
     {
       "name": "TPI Sunday Stream",
-      "logo": "/src/assets/wc25/tpi-sun.webp",
+      "logo": "https://release.botc.app/wc25/tpi-sun.webp",
       "url": "https://www.twitch.tv/thepandemoniuminstitute",
       "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
       "time": "Sundays 8pm EDT / Midnight UK"
     },
     {
       "name": "TPI Thursday Stream",
-      "logo": "/src/assets/wc25/tpi-thu.webp",
+      "logo": "https://release.botc.app/wc25/tpi-thu.webp",
       "url": "https://www.twitch.tv/thepandemoniuminstitute",
       "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
       "time": "Thursdays 8pm UK"
     },
     {
       "name": "PattersTTV",
-      "logo": "/src/assets/wc25/patters.webp",
+      "logo": "https://release.botc.app/wc25/patters.webp",
       "url": "https://www.twitch.tv/pattersttv",
       "description": "\"Brainiac: Science Abuse\" meets \"Blood on the Clocktower\". Expect bold claims, haywire choices and good times!",
       "time": "Wednesday 7pm UK"
