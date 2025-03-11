@@ -1,0 +1,856 @@
+{
+  "scripts": [
+    {
+      "id": "witchhunt",
+      "name": "Witch Hunt",
+      "author": "Nick B",
+      "description": "A Lil' Monsta script where all evil characters are Witches! The Djinn rule both incentivizes good players to nominate in order to limit the evil team's options, and also deters them by threatening extra deaths.",
+      "rule": "All Minions are Witches. Nominated Demons can not move tonight.",
+      "roles": [
+        "steward",
+        "noble",
+        "librarian",
+        "shugenja",
+        "empath",
+        "balloonist",
+        "general",
+        "fortuneteller",
+        "towncrier",
+        "lycanthrope",
+        "alsaahir",
+        "seamstress",
+        "huntsman",
+        "drunk",
+        "recluse",
+        "damsel",
+        "snitch",
+        "witch",
+        "lilmonsta"
+      ]
+    },
+    {
+      "id": "buyersremorse",
+      "name": "Buyer's Remorse",
+      "author": "mist",
+      "description": "A humble merchant has come to peddle their wares at the very same time an evil Demon haunts your village. Can capitalism save these townsfolk? Or will they succumb to the foibles of greed? Recommended to stay on script for abilities, but ST's choice.",
+      "rule": "Players have 7 gold. Each day, an ability is auctioned; highest unique bidder gains it until dawn, even if dead. Bids are not returned (bar evil ties) & secret.",
+      "roles": [
+        "noble",
+        "shugenja",
+        "pixie",
+        "villageidiot",
+        "snakecharmer",
+        "dreamer",
+        "undertaker",
+        "engineer",
+        "nightwatchman",
+        "seamstress",
+        "fisherman",
+        "ravenkeeper",
+        "mayor",
+        "recluse",
+        "golem",
+        "barber",
+        "puzzlemaster",
+        "harpy",
+        "psychopath",
+        "xaan",
+        "goblin",
+        "nodashii",
+        "imp",
+        "lleech"
+      ]
+    },
+    {
+      "id": "deadcouncil",
+      "name": "Council of the Dead",
+      "author": "Ember",
+      "description": "The script's goal to have limited confirmation, giving the dead a harder decision on who to give the boon. The boon given is up to ST discretion, so while it is meant to help, don't be afraid to balance its strength based on which team is winning.",
+      "rule": "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon.",
+      "roles": [
+        "librarian",
+        "shugenja",
+        "fortuneteller",
+        "towncrier",
+        "oracle",
+        "monk",
+        "savant",
+        "alsaahir",
+        "philosopher",
+        "huntsman",
+        "fisherman",
+        "soldier",
+        "mayor",
+        "drunk",
+        "recluse",
+        "mutant",
+        "damsel",
+        "mezepheles",
+        "cerenovus",
+        "summoner",
+        "baron",
+        "imp",
+        "vigormortis",
+        "vortox"
+      ]
+    },
+    {
+      "id": "djinnsbargain",
+      "name": "The Djinn's Bargain",
+      "author": "Phil (phillyCHEEEEEZ)",
+      "description": "This script explores power and sacrifice. Nominators may choose to die to let their nominee use their ability twice before dusk tomorrow. Players must weigh empowering allies against the cost of their life, creating high-stakes decisions and tension.",
+      "rule": "Nominators may choose to die after making a nomination. If they do, their nominee's ability works twice until dusk tomorrow.",
+      "roles": [
+        "chef",
+        "investigator",
+        "clockmaker",
+        "librarian",
+        "balloonist",
+        "preacher",
+        "fortuneteller",
+        "dreamer",
+        "innkeeper",
+        "exorcist",
+        "fisherman",
+        "alchemist",
+        "ravenkeeper",
+        "goon",
+        "drunk",
+        "barber",
+        "snitch",
+        "witch",
+        "assassin",
+        "xaan",
+        "marionette",
+        "pukka",
+        "nodashii",
+        "ojo",
+        "po"
+      ]
+    },
+    {
+      "id": "wonders",
+      "name": "Show Me Wonders",
+      "author": "DinosaurSatan",
+      "description": "The existence of the Al-Hadikhia is kept secret. Roles were added to account for the deaths at night of players who chose to live. Roles that benefit from revival will create dilemmas for both teams but are great to bluff as for evil.",
+      "rule": "Each night*, all players secretly choose in advance to live or die if they were to be chosen by the Al-Hadikhia. Al-Hadikhia choices are not announced.",
+      "roles": [
+        "chef",
+        "investigator",
+        "grandmother",
+        "librarian",
+        "undertaker",
+        "innkeeper",
+        "gambler",
+        "gossip",
+        "nightwatchman",
+        "professor",
+        "soldier",
+        "ravenkeeper",
+        "mayor",
+        "drunk",
+        "recluse",
+        "sweetheart",
+        "moonchild",
+        "godfather",
+        "poisoner",
+        "spy",
+        "pithag",
+        "shabaloth",
+        "alhadikhia"
+      ]
+    },
+    {
+      "id": "trainedkiller",
+      "name": "Trained Killer",
+      "author": "Ekin",
+      "description": "This script determines a kill order for the two Demons who normally kill via the ST. It is intentionally out of SAO and the order is carefully constructed to work with the Djinn rule. Demon works down the list but might retarget players who survive.",
+      "rule": "Each night*, the Demon attacks the next living in-play character(s) in script order. Characters who survive might get reattacked.",
+      "roles": [
+        "mayor",
+        "villageidiot",
+        "artist",
+        "lycanthrope",
+        "ravenkeeper",
+        "monk",
+        "fortuneteller",
+        "seamstress",
+        "pixie",
+        "steward",
+        "king",
+        "choirboy",
+        "amnesiac",
+        "snitch",
+        "recluse",
+        "ogre",
+        "drunk",
+        "poisoner",
+        "spy",
+        "harpy",
+        "xaan",
+        "boffin",
+        "wizard",
+        "yaggababble",
+        "lilmonsta"
+      ]
+    },
+    {
+      "id": "phantomdetectives",
+      "name": "The Phantom Detectives",
+      "author": "schnauzer",
+      "description": "Townsfolk who die become powerful ghosts who commune with the living to solve their own murder. The evil team may keep powerful Townsfolk alive to deny them info, and good characters will be angling to get killed at a critical moment.",
+      "rule": "Dead players (not Demons) keep their abliities. Each Townsfolk loses their ability at the start of night 1, then regains it on death.",
+      "roles": [
+        "steward",
+        "knight",
+        "noble",
+        "shugenja",
+        "highpriestess",
+        "dreamer",
+        "cultleader",
+        "oracle",
+        "engineer",
+        "nightwatchman",
+        "seamstress",
+        "huntsman",
+        "banshee",
+        "plaguedoctor",
+        "klutz",
+        "saint",
+        "damsel",
+        "witch",
+        "wizard",
+        "organgrinder",
+        "boffin",
+        "yaggababble",
+        "imp",
+        "vigormortis",
+        "fanggu",
+        "fibbin"
+      ]
+    },
+    {
+      "id": "1daymore",
+      "name": "One Day More",
+      "author": "Robe",
+      "description": "An S&V style script: strong info disrupted by outsiders/evil. Djinn means info is delayed by 24 hours. So the Widow call goes out Night 2; HP learns yesterday’s name; a Sage gets info the night after they die (and can be poisoned if they out), etc.",
+      "rule": "Signal Failure: There is a 24 hour delay impacting all characters with abilities that know or learn information.",
+      "roles": [
+        "chef",
+        "librarian",
+        "highpriestess",
+        "general",
+        "villageidiot",
+        "fortuneteller",
+        "dreamer",
+        "towncrier",
+        "savant",
+        "nightwatchman",
+        "philosopher",
+        "artist",
+        "sage",
+        "recluse",
+        "mutant",
+        "damsel",
+        "puzzlemaster",
+        "poisoner",
+        "witch",
+        "cerenovus",
+        "widow",
+        "xaan",
+        "lilmonsta",
+        "imp",
+        "fanggu"
+      ]
+    },
+    {
+      "id": "stowedaway",
+      "name": "Stowed Away",
+      "author": "CaffeineBoost",
+      "description": "A script where Travellers can go in the bag. It's Sentinel on steroids. Bluff Deviant as the DA, bluff Mutant as Scapegoat, you can secretly have 2 Cerenovuses (do not have 2 DA's). Fun on all player sizes (including 10 & 13).",
+      "rule": "Up to 2 recommended travellers might be in the bag & the player count lowers accordingly. Travellers are not announced, executions & exiles are equivalent.",
+      "roles": [
+        "librarian",
+        "pixie",
+        "highpriestess",
+        "snakecharmer",
+        "flowergirl",
+        "gambler",
+        "gossip",
+        "savant",
+        "seamstress",
+        "fisherman",
+        "ravenkeeper",
+        "tealady",
+        "poppygrower",
+        "lunatic",
+        "plaguedoctor",
+        "mutant",
+        "puzzlemaster",
+        "poisoner",
+        "devilsadvocate",
+        "cerenovus",
+        "assassin",
+        "summoner",
+        "pukka",
+        "imp",
+        "po",
+        "bonecollector",
+        "apprentice",
+        "deviant",
+        "scapegoat",
+        "bootlegger"
+      ]
+    },
+    {
+      "id": "offwizard",
+      "name": "Off to See the Wizard",
+      "author": "Crispy Duck",
+      "description": "This script is about solving wizard wishes, it encourages a subtle wizard or a minion to bluff the Djinn ability. It gives starting ability characters a reason to stay alive. Wizard clues can be more subtle too.",
+      "rule": "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made.",
+      "roles": [
+        "chef",
+        "noble",
+        "clockmaker",
+        "librarian",
+        "highpriestess",
+        "acrobat",
+        "savant",
+        "nightwatchman",
+        "artist",
+        "cannibal",
+        "amnesiac",
+        "farmer",
+        "ravenkeeper",
+        "sweetheart",
+        "hatter",
+        "mutant",
+        "politician",
+        "wizard",
+        "xaan",
+        "boomdandy",
+        "scarletwoman",
+        "pukka",
+        "imp",
+        "kazali"
+      ]
+    },
+    {
+      "id": "deadpeople",
+      "name": "I See Dead People",
+      "author": "A terrifying wizard",
+      "description": "This script plays with something that players normally know for certain- whether they are alive or dead.  Voting is risky, the demon can hide in new ways and new ways to lie emerge. Characters like the chambermaid and poisoner find new uses.",
+      "rule": "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up",
+      "roles": [
+        "soldier",
+        "banshee",
+        "oracle",
+        "snakecharmer",
+        "fortuneteller",
+        "chambermaid",
+        "dreamer",
+        "empath",
+        "professor",
+        "sage",
+        "courtier",
+        "philosopher",
+        "pacifist",
+        "sweetheart",
+        "damsel",
+        "recluse",
+        "mutant",
+        "poisoner",
+        "mastermind",
+        "devilsadvocate",
+        "baron",
+        "fanggu",
+        "imp"
+      ]
+    },
+    {
+      "id": "riverstyx",
+      "name": "The River Styx",
+      "author": "Rhea",
+      "description": "This script contains reasons for minions to play more freely as outed evil, knowing that they can make extra plays from the grave. Good players can counter with their own dead votes, but use too many and the Demon may not restore the votes!",
+      "rule": "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token.",
+      "roles": [
+        "investigator",
+        "shugenja",
+        "pixie",
+        "general",
+        "fortuneteller",
+        "towncrier",
+        "savant",
+        "fisherman",
+        "cannibal",
+        "amnesiac",
+        "farmer",
+        "mayor",
+        "magician",
+        "lunatic",
+        "drunk",
+        "recluse",
+        "damsel",
+        "mezepheles",
+        "poisoner",
+        "fearmonger",
+        "scarletwoman",
+        "baron",
+        "imp",
+        "ojo",
+        "vigormortis",
+        "ferryman"
+      ]
+    },
+    {
+      "id": "beautifulhouse",
+      "name": "This Is Not My Beautiful House",
+      "author": "James Waumsley (aka JC)",
+      "description": "The Amnesiac can sometimes be feels-bad for town if you can't get the ability. Here, the Amne is meant to be scary, because you know you're messing up town but not how. The script is boilerplate to let the ST have options how to wield the ability.",
+      "rule": "The Amnesiac is considered an Outsider character type.",
+      "roles": [
+        "grandmother",
+        "shugenja",
+        "empath",
+        "sailor",
+        "balloonist",
+        "mathematician",
+        "towncrier",
+        "monk",
+        "gambler",
+        "exorcist",
+        "gossip",
+        "amnesiac",
+        "ravenkeeper",
+        "pacifist",
+        "tinker",
+        "recluse",
+        "puzzlemaster",
+        "godfather",
+        "poisoner",
+        "devilsadvocate",
+        "marionette",
+        "yaggababble",
+        "pukka",
+        "imp",
+        "vigormortis"
+      ]
+    },
+    {
+      "id": "binarysupernovae",
+      "name": "Binary Supernovae",
+      "author": "Hystrex",
+      "description": "Binary Supernovae is the \"Duo Boss\" of clocktower. 2 Demons work together to crush town, playing around each others' unique strengths & weaknesses. They might even kill each other! Town wins by finding a single Demon, but will they have enough time?",
+      "rule": "If a Demon dies by execution, good wins. Summoner only removes 1 Demon. [+1 Demon]",
+      "roles": [
+        "chef",
+        "grandmother",
+        "shugenja",
+        "empath",
+        "fortuneteller",
+        "oracle",
+        "innkeeper",
+        "gambler",
+        "exorcist",
+        "seamstress",
+        "philosopher",
+        "soldier",
+        "magician",
+        "butler",
+        "tinker",
+        "sweetheart",
+        "moonchild",
+        "assassin",
+        "xaan",
+        "summoner",
+        "mastermind",
+        "pukka",
+        "imp",
+        "ojo"
+      ]
+    },
+    {
+      "id": "warrens",
+      "name": "The Warrens",
+      "author": "Zets (Lachlan)",
+      "description": "A script where the Demon can escape threats by jumping around via nominations. Legion swapping does nothing, but Legion can take advantage of paranoia around the custom rule to push for executions. ",
+      "rule": "If 5 or more players live, evil players who nominate other living evil players (not Travellers) immediately swap characters.",
+      "roles": [
+        "shugenja",
+        "pixie",
+        "balloonist",
+        "fortuneteller",
+        "towncrier",
+        "undertaker",
+        "savant",
+        "artist",
+        "juggler",
+        "amnesiac",
+        "ravenkeeper",
+        "mayor",
+        "poppygrower",
+        "ogre",
+        "lunatic",
+        "saint",
+        "puzzlemaster",
+        "harpy",
+        "cerenovus",
+        "assassin",
+        "widow",
+        "nodashii",
+        "kazali",
+        "ojo",
+        "legion",
+        "spiritofivory"
+      ]
+    },
+    {
+      "id": "seat7",
+      "name": "The Ballad of Seat 7",
+      "author": "TrashWarlock",
+      "description": "Created in collaboration with the Strings server. Seat 7 is here to save you from a teensy and add some mystery to your already unsolvable game.",
+      "rule": "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on it's behalf.",
+      "roles": [
+        "noble",
+        "washerwoman",
+        "librarian",
+        "balloonist",
+        "fortuneteller",
+        "dreamer",
+        "seamstress",
+        "fisherman",
+        "soldier",
+        "farmer",
+        "mayor",
+        "virgin",
+        "magician",
+        "drunk",
+        "recluse",
+        "saint",
+        "barber",
+        "damsel",
+        "pithag",
+        "boomdandy",
+        "scarletwoman",
+        "boffin",
+        "nodashii",
+        "vigormortis",
+        "fanggu"
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "name": "TPI Wednesday Stream",
+      "logo": "/src/assets/wc25/tpi-wed.webp",
+      "url": "https://www.twitch.tv/thepandemoniuminstitute",
+      "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
+      "time": "Wednesdays 7pm AEDT / 8am UK"
+    },
+    {
+      "name": "Noobs on the Gooftower",
+      "logo": "/src/assets/wc25/notg.webp",
+      "url": "https://www.youtube.com/@NoobsontheGooftower",
+      "description": "Noobs on the Gooftower is a lively crew of funny people playing Blood on the Clocktower with an emphasis on fun over winning. We stream every Tuesday at 2pm Pacific unless our host Chris Grace has a job, which is not very often!",
+      "time": "Tuesdays 2pm Pacific / 9pm UK"
+    },
+    {
+      "name": "Grim Scenarios",
+      "logo": "/src/assets/wc25/grimscenarios.webp",
+      "url": "https://www.twitch.tv/grimscenarios",
+      "description": "Grim Scenarios welcomes Blood on the Clocktower players and other gamers alike to join our community, where inclusivity and kindness are at the heart of everything we do. Whether you're a seasoned player or trying to figure out what the heck is going on (or maybe both!) everyone can enjoy playing games and learning together.",
+      "time": "Tuesdays 8pm EDT / Midnight UK"
+    },
+    {
+      "name": "GenCon",
+      "logo": "/src/assets/wc25/gencon.webp",
+      "url": "https://www.twitch.tv/gencontv",
+      "description": "description",
+      "time": "Sunday 8am AEDT"
+    },
+    {
+      "name": "The Grimoire",
+      "logo": "/src/assets/wc25/thegrim.webp",
+      "url": "https://www.twitch.tv/thegrimgg",
+      "description": "The Grimoire is a community focused on offering as many people the chance to experience Blood on the Clocktower as possible! We currently run curated events in both US and EU timezones, with many focused on teaching the game to new players.",
+      "time": "Saturday 1pm PST"
+    },
+    {
+      "name": "TPI Sunday Stream",
+      "logo": "/src/assets/wc25/tpi-sun.webp",
+      "url": "https://www.twitch.tv/thepandemoniuminstitute",
+      "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
+      "time": "Sundays 8pm EDT / Midnight UK"
+    },
+    {
+      "name": "TPI Thursday Stream",
+      "logo": "/src/assets/wc25/tpi-thu.webp",
+      "url": "https://www.twitch.tv/thepandemoniuminstitute",
+      "description": "The official Twitch channel for The Pandemonium Institute and the home of online Blood on the Clocktower.",
+      "time": "Thursdays 8pm UK"
+    },
+    {
+      "name": "PattersTTV",
+      "logo": "/src/assets/wc25/patters.webp",
+      "url": "https://www.twitch.tv/pattersttv",
+      "description": "\"Brainiac: Science Abuse\" meets \"Blood on the Clocktower\". Expect bold claims, haywire choices and good times!",
+      "time": "Wednesday 7pm UK"
+    }
+  ],
+  "matches": [
+    {
+      "scripts": [
+        0,
+        1
+      ],
+      "channel": 6,
+      "time": 1641899600000,
+      "timeORG": 1741896000000,
+      "winner": 0
+    },
+    {
+      "scripts": [
+        2,
+        3
+      ],
+      "channel": 5,
+      "time": 1741616675087,
+      "timeORG": 1742151600000,
+      "winner": null
+    },
+    {
+      "scripts": [
+        4,
+        5
+      ],
+      "channel": 0,
+      "time": 1742371200000
+    },
+    {
+      "scripts": [
+        6,
+        7
+      ],
+      "channel": 6,
+      "time": 1742500800000
+    },
+    {
+      "scripts": [
+        8,
+        9
+      ],
+      "channel": 4,
+      "time": 1742673600000
+    },
+    {
+      "scripts": [
+        10,
+        11
+      ],
+      "channel": 1,
+      "time": 1742936400000
+    },
+    {
+      "scripts": [
+        12,
+        13
+      ],
+      "channel": 6,
+      "time": 1743105600000
+    },
+    {
+      "scripts": [
+        14,
+        15
+      ],
+      "channel": 3,
+      "time": 1743282000000
+    },
+    {
+      "scripts": [
+        0,
+        2
+      ],
+      "channel": 2,
+      "time": 1743465600000
+    },
+    {
+      "scripts": [
+        1,
+        3
+      ],
+      "channel": 6,
+      "time": 1743706800000
+    },
+    {
+      "scripts": [
+        4,
+        6
+      ],
+      "channel": 5,
+      "time": 1743984000000
+    },
+    {
+      "scripts": [
+        8,
+        10
+      ],
+      "channel": 0,
+      "time": 1744189200000
+    },
+    {
+      "scripts": [
+        9,
+        11
+      ],
+      "channel": 6,
+      "time": 1744311600000
+    },
+    {
+      "scripts": [
+        5,
+        7
+      ],
+      "channel": 4,
+      "time": 1744488000000
+    },
+    {
+      "scripts": [
+        12,
+        14
+      ],
+      "channel": 1,
+      "time": 1744664400000
+    },
+    {
+      "scripts": [
+        13,
+        15
+      ],
+      "channel": 6,
+      "time": 1744916400000
+    },
+    {
+      "scripts": [
+        0,
+        3
+      ],
+      "channel": 3,
+      "time": 1745100000000
+    },
+    {
+      "scripts": [
+        4,
+        7
+      ],
+      "channel": 2,
+      "time": 1745366400000
+    },
+    {
+      "scripts": [
+        1,
+        2
+      ],
+      "channel": 0,
+      "time": 1746003600000
+    },
+    {
+      "scripts": [
+        5,
+        6
+      ],
+      "channel": 6,
+      "time": 1746126000000
+    },
+    {
+      "scripts": [
+        8,
+        11
+      ],
+      "channel": 5,
+      "time": 1746403200000
+    },
+    {
+      "scripts": [
+        9,
+        10
+      ],
+      "channel": 1,
+      "time": 1746565200000
+    },
+    {
+      "scripts": [
+        12,
+        15
+      ],
+      "channel": 3,
+      "time": 1746730800000
+    },
+    {
+      "scripts": [
+        13,
+        14
+      ],
+      "channel": 7,
+      "time": 1747245600000
+    }
+  ],
+  "playoffs": [
+    {
+      "scripts": [
+        "1st A",
+        "2nd B"
+      ],
+      "channel": 4,
+      "time": 1747512000000
+    },
+    {
+      "scripts": [
+        "1st B",
+        "2nd A"
+      ],
+      "channel": 2,
+      "time": 1747785600000
+    },
+    {
+      "scripts": [
+        "1st C",
+        "2nd D"
+      ],
+      "channel": 5,
+      "time": 1748217600000
+    },
+    {
+      "scripts": [
+        "1st D",
+        "2nd C"
+      ],
+      "channel": 7,
+      "time": 1748455200000
+    },
+    {
+      "scripts": [
+        "...",
+        "..."
+      ],
+      "channel": 0,
+      "time": 1749027600000
+    },
+    {
+      "scripts": [
+        "...",
+        "..."
+      ],
+      "channel": 6,
+      "time": 1749150000000
+    },
+    {
+      "scripts": [
+        "...",
+        "..."
+      ],
+      "channel": 6,
+      "time": 1749754800000
+    }
+  ]
+}
