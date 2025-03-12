@@ -9,6 +9,25 @@
       "Nominators may choose to die after making a nomination. If they do, their nominee's ability works twice until dusk tomorrow."
     ]
   },
+  {
+    "id": "djinnsbargain-djinnsbargain",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice",
+      "Acts Twice"
+    ],
+    "setup": false,
+    "name": "Djinn's Bargain",
+    "team": "fabled",
+    "ability": "Nominators may choose to die after making a nomination. If they do, their nominee's ability works twice until dusk tomorrow."
+  },
   "chef",
   "investigator",
   "clockmaker",
