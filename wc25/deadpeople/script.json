@@ -6,8 +6,33 @@
     "logo": "https://release.botc.app/wc25/deadpeople/logo.webp",
     "hideTitle": true,
     "bootlegger": [
-      "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up."
+      "Characters die as normal but the storyteller doesn’t announce deaths. Dead players can nominate. Poisoned players don’t wake up."
     ]
+  },
+  {
+    "id": "deadpeople-iseedeadpeople",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead",
+      "Dead"
+    ],
+    "setup": false,
+    "name": "I See Dead People",
+    "team": "fabled",
+    "ability": "Characters die as normal but the storyteller doesn’t announce deaths. Dead players can nominate. Poisoned players don’t wake up."
   },
   "soldier",
   "banshee",
