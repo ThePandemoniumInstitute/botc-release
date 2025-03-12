@@ -34,8 +34,78 @@
   "pukka",
   "imp",
   "po",
-  "bonecollector",
-  "apprentice",
-  "deviant",
-  "scapegoat"
+  {
+    "id": "stowedaway-bonecollector",
+    "name": "Bone Collector",
+    "team": "townsfolk",
+    "image": [
+      "https://release.botc.app/wc25/stowedaway/bonecollector_g.webp",
+      "https://release.botc.app/wc25/stowedaway/bonecollector_e.webp"
+    ],
+    "firstNightReminder": "",
+    "otherNight": 1,
+    "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+    "reminders": [
+      "No Ability",
+      "Has Ability"
+    ],
+    "setup": false,
+    "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk.",
+    "flavor": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers."
+  },
+  {
+    "id": "stowedaway-apprentice",
+    "name": "Apprentice",
+    "team": "townsfolk",
+    "image": [
+      "https://release.botc.app/wc25/stowedaway/apprentice_g.webp",
+      "https://release.botc.app/wc25/stowedaway/apprentice_e.webp"
+    ],
+    "firstNight": 1,
+    "firstNightReminder": "Show the Apprentice the 'You are' card, then a Townsfolk or Minion token. In the Grimoire, replace the Apprentice token with that character token, and put the Apprentice's 'Is the Apprentice' reminder by that character token.",
+    "otherNightReminder": "",
+    "reminders": [
+      "Is The Apprentice"
+    ],
+    "setup": false,
+    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      }
+    ],
+    "flavor": "For years have I traveled, studying the ways of The Craft. Which craft, you ask? Simply that of the simple folk. Nothing to worry about. Not yet."
+  },
+  {
+    "id": "stowedaway-deviant",
+    "name": "Deviant",
+    "team": "townsfolk",
+    "image": [
+      "https://release.botc.app/wc25/stowedaway/deviant_g.webp",
+      "https://release.botc.app/wc25/stowedaway/deviant_e.webp"
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "ability": "If you were funny today, you cannot die by exile.",
+    "flavor": "Twas the lady's quip, forsooth."
+  },
+  {
+    "id": "stowedaway-scapegoat",
+    "name": "Scapegoat",
+    "team": "townsfolk",
+    "image": [
+      "https://release.botc.app/wc25/stowedaway/scapegoat_g.webp",
+      "https://release.botc.app/wc25/stowedaway/scapegoat_e.webp"
+    ],
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [],
+    "setup": false,
+    "ability": "If a player of your alignment is executed, you might be executed instead.",
+    "flavor": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?"
+  }
 ]
