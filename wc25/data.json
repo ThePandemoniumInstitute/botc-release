@@ -199,7 +199,7 @@
       "name": "The Phantom Detectives",
       "author": "schnauzer",
       "description": "Townsfolk who die become powerful ghosts who commune with the living to solve their own murder. The evil team may keep powerful Townsfolk alive to deny them info, and good characters will be angling to get killed at a critical moment.",
-      "rule": "Dead players (not Demons) keep their abliities. Each Townsfolk loses their ability at the start of night 1, then regains it on death.",
+      "rule": "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death.",
       "roles": [
         "steward",
         "knight",

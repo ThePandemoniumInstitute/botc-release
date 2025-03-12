@@ -6,7 +6,7 @@
     "logo": "https://release.botc.app/wc25/phantomdetectives/logo.webp",
     "hideTitle": true,
     "bootlegger": [
-      "Dead players (not Demons) keep their abliities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
+      "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
     ]
   },
   "steward",
