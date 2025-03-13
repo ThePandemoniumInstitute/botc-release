@@ -9,6 +9,18 @@
       "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made."
     ]
   },
+  {
+    "id": "offwizard-offwizard",
+    "firstNightReminder": "",
+    "otherNightReminder": "",
+    "reminders": [
+      "Knows"
+    ],
+    "setup": false,
+    "name": "Off to see the Wizard",
+    "team": "fabled",
+    "ability": "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made."
+  },
   "chef",
   "noble",
   "clockmaker",
