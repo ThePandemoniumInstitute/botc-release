@@ -9,22 +9,6 @@
       "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon."
     ]
   },
-  {
-    "id": "deadcouncil-council",
-    "name": "Council of the Dead",
-    "team": "fabled",
-    "ability": "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon.",
-    "otherNight": 1,
-    "otherNightReminder": "If it is Night 4, wake the dead together and let them talk for 2 minutes. Then have the dead players secretly vote for a living player. Whichever player is selected, give that player a boon.",
-    "special": [
-      {
-        "type": "ability",
-        "name": "pointing",
-        "time": "night",
-        "global": "dead"
-      }
-    ]
-  },
   "librarian",
   "shugenja",
   "fortuneteller",
