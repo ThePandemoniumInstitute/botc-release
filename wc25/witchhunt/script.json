@@ -27,6 +27,30 @@
   "recluse",
   "damsel",
   "snitch",
-  "witch",
+  {
+    "id": "witchhunt-witch",
+    "name": "Witch",
+    "team": "minion",
+    "image": [
+      "https://release.botc.app/wc25/witchhunt/witch_e.webp",
+      "https://release.botc.app/wc25/witchhunt/witch_g.webp"
+    ],
+    "firstNight": 36,
+    "firstNightReminder": "The Witch chooses a player. :reminder:",
+    "otherNight": 23,
+    "otherNightReminder": "The Witch chooses a player. :reminder:",
+    "reminders": [
+      "Cursed"
+    ],
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-duplicate"
+      }
+    ],
+    "setup": false,
+    "ability": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
+    "flavor": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that brambled path, and don't look back."
+  },
   "lilmonsta"
 ]

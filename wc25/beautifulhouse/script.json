@@ -21,9 +21,29 @@
   "gambler",
   "exorcist",
   "gossip",
-  "amnesiac",
   "ravenkeeper",
   "pacifist",
+  {
+    "id": "beautifulhouse-amnesiac",
+    "name": "Amnesiac",
+    "team": "outsider",
+    "image": [
+      "https://release.botc.app/wc25/beautifulhouse/amnesiac_g.webp",
+      "https://release.botc.app/wc25/beautifulhouse/amnesiac_e.webp"
+    ],
+    "firstNight": 45,
+    "firstNightReminder": "Run the Amnesiac's ability, if applicable.",
+    "otherNight": 63,
+    "otherNightReminder": "Run the Amnesiac's ability, if applicable.",
+    "reminders": [
+      "?",
+      "?",
+      "?"
+    ],
+    "setup": false,
+    "ability": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+    "flavor": "Wait. What. Who? Oh, ok. Wait. What?"
+  },
   "tinker",
   "recluse",
   "puzzlemaster",
