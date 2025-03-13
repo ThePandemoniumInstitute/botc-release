@@ -122,4 +122,4 @@ This type modifies what happens when the game ends, right before the character r
   - "otherNight"
   - "otherDay"
 - **Property `value`:** Can be a Number or String that is used as a parameter for a special ability or effect.
-- **Property `global`:** An awkward compromise to allow Lil'Monsta to work when it is not in play. Currently defines what kind of characters have the special ability as long as this character is on the script. I'd probably not use this if I were you, because it might be subject to change if I can think of a better way to make Lil'Monsta work. Can contain any character type value. ("townsfolk", "outsider", "minion", "demon", "traveler")
+- **Property `global`:** An awkward compromise to allow Lil'Monsta to work when it is not in play. Currently defines what kind of characters have the special ability as long as this character is on the script. I'd probably not use this if I were you, because it might be subject to change if I can think of a better way to make Lil'Monsta work. Can contain any character type value ("townsfolk", "outsider", "minion", "demon", "traveler") or the special value "dead" which allows all dead players to pick.
