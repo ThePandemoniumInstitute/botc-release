@@ -12,6 +12,7 @@ Depending on your operating system, you have to select the correct file:
 
 > [!WARNING]
 > The Linux standalone version currently does not support microphone / camera chat.<br> This will be fixed in a future update.
+> You can check [this](https://bugs.webkit.org/show_bug.cgi?id=235885) and [this](https://github.com/tauri-apps/wry/issues/85) issue for progress.
 
 ## Custom scripts
 Your custom (and homebrew) scripts can be augmented with "meta data" to improve the play experience and make it easier for your players to see what script exactly is being played. In order to do this, just add a `meta` entry to your custom script JSON, with the following (optional) properties:
