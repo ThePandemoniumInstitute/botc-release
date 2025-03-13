@@ -4,6 +4,7 @@
     "author": "Ascarywizard",
     "name": "I see dead people",
     "logo": "https://release.botc.app/wc25/deadpeople/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up."

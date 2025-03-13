@@ -4,6 +4,7 @@
     "name": "Buyer's Remorse",
     "id": "_meta",
     "logo": "https://release.botc.app/wc25/buyersremorse/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "Players have 7 gold. Each day, an ability is auctioned; highest unique bidder gains it until dawn, even if dead. Bids are not returned (bar evil ties) & secret."

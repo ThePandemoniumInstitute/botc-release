@@ -4,6 +4,7 @@
     "author": "Nick B",
     "name": "Witch Hunt",
     "logo": "https://release.botc.app/wc25/witchhunt/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "All Minions are Witches. Nominated Demons can not move tonight."

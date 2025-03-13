@@ -4,6 +4,7 @@
     "author": "Rhea",
     "name": "The River Styx",
     "logo": "https://release.botc.app/wc25/riverstyx/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token."

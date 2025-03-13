@@ -4,6 +4,7 @@
     "author": "Crispy Duck",
     "name": "Off to see the Wizard",
     "logo": "https://release.botc.app/wc25/offwizard/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made."

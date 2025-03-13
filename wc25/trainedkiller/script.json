@@ -4,6 +4,7 @@
     "author": "Ekin",
     "name": "Trained Killer",
     "logo": "https://release.botc.app/wc25/trainedkiller/logo.webp",
+    "background": "https://release.botc.app/wc25/background.webp",
     "hideTitle": true,
     "bootlegger": [
       "Each night*, the Demon attacks the next living in-play character(s) in script order. Characters who survive might get reattacked."
