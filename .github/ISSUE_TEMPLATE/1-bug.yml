@@ -61,6 +61,14 @@ body:
     validations:
       required: true
   - type: input
+    id: userid
+    attributes:
+      label: App User ID
+      description: "Please provide your app user ID. You can find it in the Settings -> User tab."
+      placeholder: "6223344556677"
+    validations:
+      required: true
+  - type: input
     id: session
     attributes:
       label: Game Session
