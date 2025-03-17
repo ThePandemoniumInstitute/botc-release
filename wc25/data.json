@@ -509,7 +509,7 @@
       "name": "The Ballad of Seat 7",
       "author": "TrashWarlock",
       "description": "Created in collaboration with the Strings server. Seat 7 is here to save you from a teensy and add some mystery to your already unsolvable game.",
-      "rule": "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on it's behalf.",
+      "rule": "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on its behalf.",
       "roles": [
         "noble",
         "washerwoman",
