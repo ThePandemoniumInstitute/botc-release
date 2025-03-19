@@ -624,7 +624,9 @@
         5
       ],
       "channel": 0,
-      "time": 1742371200000
+      "time": 1742371200000,
+      "link": "https://www.twitch.tv/videos/2409632158",
+      "winner": null
     },
     {
       "scripts": [
