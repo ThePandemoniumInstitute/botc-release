@@ -25,6 +25,7 @@ Your custom (and homebrew) scripts can be augmented with "meta data" to improve 
     "logo": "https://i.imgur.com/logo.png",
     "hideTitle": false,
     "background": "https://i.imgur.com/background-image.jpg",
+    "bootlegger": ["Your custom bootlegger rule"],
     "firstNight": ["dusk","minioninfo", "demoninfo","poisoner","...","dawn"],
     "otherNight": ["dusk","poisoner","...","dawn"]
   }
@@ -93,7 +94,7 @@ All abilities can be modified by the `time` and `global` parameters.
 
 #### Type: `signal`
 
-This type allows the Storyteller to send a player special information through the night "wake" interface. 
+This type allows the Storyteller to send a player special information through the night "wake" interface.
 Can be modified by the `time` parameter.
 
 - **Name: `grimoire`:** Send a copy of the Grimoire to the player. The grimoire copy can be modified before being sent. <br>**Example:** Spy, Widow
