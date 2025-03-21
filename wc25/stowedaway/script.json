@@ -50,8 +50,8 @@
       "No Ability",
       "Has Ability"
     ],
-    "setup": false,
-    "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk.",
+    "setup": true,
+    "ability": "Once per game, at night*, choose a dead player: they regain their ability until dusk. [Reduce non-traveller player count]",
     "flavor": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers."
   },
   {
@@ -68,8 +68,8 @@
     "reminders": [
       "Is The Apprentice"
     ],
-    "setup": false,
-    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil).",
+    "setup": true,
+    "ability": "On your 1st night, you gain a Townsfolk ability (if good), or a Minion ability (if evil). [Reduce non-traveller player count]",
     "special": [
       {
         "type": "signal",
@@ -90,8 +90,8 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": false,
-    "ability": "If you were funny today, you cannot die by exile.",
+    "setup": true,
+    "ability": "If you were funny today, you cannot die by exile. [Reduce non-traveller player count]",
     "flavor": "Twas the lady's quip, forsooth."
   },
   {
@@ -105,8 +105,8 @@
     "firstNightReminder": "",
     "otherNightReminder": "",
     "reminders": [],
-    "setup": false,
-    "ability": "If a player of your alignment is executed, you might be executed instead.",
+    "setup": true,
+    "ability": "If a player of your alignment is executed, you might be executed instead. [Reduce non-traveller player count]",
     "flavor": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?"
   }
 ]
