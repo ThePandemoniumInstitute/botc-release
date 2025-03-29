@@ -40,7 +40,8 @@
       "name": "Trained Killer",
       "author": "Ekin",
       "description": "This script determines a kill order for the two Demons who normally kill via the ST. It is intentionally out of SAO and the order is carefully constructed to work with the Djinn rule. Demon works down the list but might retarget players who survive.",
-      "rule": "Each night*, the Demon attacks the next living in-play character(s) in script order. Characters who survive might get reattacked."
+      "rule": "Each night*, the Demon attacks the next living in-play character(s) in script order. Characters who survive might get reattacked.",
+      "url": "https://beardytas.com/garden-of-djinn/trained-killer/"
     },
     {
       "id": "phantomdetectives",
@@ -110,7 +111,8 @@
       "name": "The Ballad of Seat 7",
       "author": "TrashWarlock",
       "description": "Created in collaboration with the Strings server. Seat 7 is here to save you from a teensy and add some mystery to your already unsolvable game.",
-      "rule": "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on its behalf."
+      "rule": "Seat 7 remains empty. Its choices are arbitrary. Once per game, the storyteller may speak on its behalf.",
+      "url": "https://beardytas.com/garden-of-djinn/the-ballad-of-seat-7/"
     }
   ],
   "channels": [
