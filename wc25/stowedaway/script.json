@@ -10,11 +10,11 @@
       "Up to 2 recommended Travellers might be in the bag & the player count lowers accordingly. Travellers are not announced, executions & exiles are equivalent."
     ]
   },
-  "librarian",
+  "grandmother",
   "pixie",
   "highpriestess",
   "snakecharmer",
-  "flowergirl",
+  "innkeeper",
   "gambler",
   "gossip",
   "savant",
@@ -24,7 +24,7 @@
   "tealady",
   "poppygrower",
   "lunatic",
-  "plaguedoctor",
+  "tinker",
   "mutant",
   "puzzlemaster",
   "poisoner",
@@ -32,9 +32,9 @@
   "cerenovus",
   "assassin",
   "summoner",
-  "pukka",
   "imp",
   "po",
+  "vigormortis",
   {
     "id": "stowedaway-bonecollector",
     "name": "Bone Collector",

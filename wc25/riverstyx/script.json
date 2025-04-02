@@ -10,20 +10,20 @@
       "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token."
     ]
   },
-  "investigator",
+  "librarian",
   "shugenja",
   "pixie",
+  "balloonist",
   "general",
   "fortuneteller",
   "towncrier",
+  "undertaker",
   "savant",
   "fisherman",
-  "cannibal",
   "amnesiac",
   "farmer",
   "mayor",
-  "magician",
-  "lunatic",
+  "butler",
   "drunk",
   "recluse",
   "damsel",
@@ -35,5 +35,6 @@
   "imp",
   "ojo",
   "vigormortis",
+  "bootlegger",
   "ferryman"
 ]
