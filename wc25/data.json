@@ -98,7 +98,8 @@
       "name": "Binary Supernovae",
       "author": "Hystrex",
       "description": "Binary Supernovae is the \"Duo Boss\" of clocktower. 2 Demons work together to crush town, playing around each others' unique strengths & weaknesses. They might even kill each other! Town wins by finding a single Demon, but will they have enough time?",
-      "rule": "If a Demon dies by execution, good wins. Summoner only removes 1 Demon. [+1 Demon]"
+      "rule": "If a Demon dies by execution, good wins. Summoner only removes 1 Demon. [+1 Demon]",
+      "url": "https://beardytas.com/garden-of-djinn/binary-supernovae/"
     },
     {
       "id": "warrens",
