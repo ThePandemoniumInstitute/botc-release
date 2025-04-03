@@ -5,21 +5,24 @@
       "name": "Witch Hunt",
       "author": "Nick B",
       "description": "A Lil' Monsta script where all evil characters are Witches! The Djinn rule both incentivizes good players to nominate in order to limit the evil team's options, and also deters them by threatening extra deaths.",
-      "rule": "All Minions are Witches. Nominated Demons can not move tonight."
+      "rule": "All Minions are Witches. Nominated Demons can not move tonight.",
+      "url": "https://beardytas.com/garden-of-djinn/witch-hunt/"
     },
     {
       "id": "buyersremorse",
       "name": "Buyer's Remorse",
       "author": "mist",
       "description": "A humble merchant has come to peddle their wares at the very same time an evil Demon haunts your village. Can capitalism save these townsfolk? Or will they succumb to the foibles of greed? Recommended to stay on script for abilities, but ST's choice.",
-      "rule": "Players have 7 gold. Each day, an ability is auctioned; highest unique bidder gains it until dawn, even if dead. Bids are not returned (bar evil ties) & secret."
+      "rule": "Players have 7 gold. Each day, an ability is auctioned; highest unique bidder gains it until dawn, even if dead. Bids are not returned (bar evil ties) & secret.",
+      "url": "https://beardytas.com/garden-of-djinn/buyers-remorse/"
     },
     {
       "id": "deadcouncil",
       "name": "Council of the Dead",
       "author": "Ember",
       "description": "The script's goal to have limited confirmation, giving the dead a harder decision on who to give the boon. The boon given is up to ST discretion, so while it is meant to help, don't be afraid to balance its strength based on which team is winning.",
-      "rule": "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon."
+      "rule": "At the start of N4, dead wake together for 2 min, then secretly vote on a living player (if there's no majority, the ST chooses). The chosen player gets a boon.",
+      "url": "https://beardytas.com/garden-of-djinn/council-of-the-dead/"
     },
     {
       "id": "djinnsbargain",
@@ -34,7 +37,8 @@
       "name": "Show Me Wonders",
       "author": "DinosaurSatan",
       "description": "The existence of the Al-Hadikhia is kept secret. Roles were added to account for the deaths at night of players who chose to live. Roles that benefit from revival will create dilemmas for both teams but are great to bluff as for evil.",
-      "rule": "Each night*, all players secretly choose in advance to live or die if they were to be chosen by the Al-Hadikhia. Al-Hadikhia choices are not announced."
+      "rule": "Each night*, all players secretly choose in advance to live or die if they were to be chosen by the Al-Hadikhia. Al-Hadikhia choices are not announced.",
+      "url": "https://beardytas.com/garden-of-djinn/show-me-wonders/"
     },
     {
       "id": "trainedkiller",
@@ -49,49 +53,56 @@
       "name": "The Phantom Detectives",
       "author": "schnauzer",
       "description": "Townsfolk who die become powerful ghosts who commune with the living to solve their own murder. The evil team may keep powerful Townsfolk alive to deny them info, and good characters will be angling to get killed at a critical moment.",
-      "rule": "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
+      "rule": "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death.",
+      "url": "https://schnauzerclub.neocities.org/scripts/thephantomdetectives"
     },
     {
       "id": "1daymore",
       "name": "One Day More",
       "author": "Robe",
       "description": "An S&V style script: strong info disrupted by outsiders/evil. Djinn means info is delayed by 24 hours. So the Widow call goes out Night 2; HP learns yesterday’s name; a Sage gets info the night after they die (and can be poisoned if they out), etc.",
-      "rule": "Signal Failure: There is a 24 hour delay impacting all characters with abilities that know or learn information."
+      "rule": "Signal Failure: There is a 24 hour delay impacting all characters with abilities that know or learn information.",
+      "url": "https://beardytas.com/garden-of-djinn/one-day-more/"
     },
     {
       "id": "stowedaway",
       "name": "Stowed Away",
       "author": "CaffeineBoost",
       "description": "A script where Travellers can go in the bag. It's Sentinel on steroids. Bluff Deviant as the DA, bluff Mutant as Scapegoat, you can secretly have 2 Cerenovuses (do not have 2 DA's). Fun on all player sizes (including 10 & 13).",
-      "rule": "Up to 2 recommended travellers might be in the bag & the player count lowers accordingly. Travellers are not announced, executions & exiles are equivalent."
+      "rule": "Up to 2 recommended travellers might be in the bag & the player count lowers accordingly. Travellers are not announced, executions & exiles are equivalent.",
+      "url": "https://beardytas.com/garden-of-djinn/stowed-away/"
     },
     {
       "id": "offwizard",
       "name": "Off to See the Wizard",
       "author": "Crispy Duck",
       "description": "This script is about solving wizard wishes, it encourages a subtle wizard or a minion to bluff the Djinn ability. It gives starting ability characters a reason to stay alive. Wizard clues can be more subtle too.",
-      "rule": "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made."
+      "rule": "If a Wizard is in play 1 good player knows & each day, while alive, may privately guess the wizard wish & learn how accurate they are if a wish has been made.",
+      "url": "https://beardytas.com/garden-of-djinn/off-to-see-the-wizard/"
     },
     {
       "id": "deadpeople",
       "name": "I See Dead People",
       "author": "A terrifying wizard",
       "description": "This script plays with something that players normally know for certain- whether they are alive or dead.  Voting is risky, the demon can hide in new ways and new ways to lie emerge. Characters like the chambermaid and poisoner find new uses.",
-      "rule": "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up"
+      "rule": "Characters die as normal but the storyteller doesn’t announce deaths.  Dead players can nominate.  Poisoned players don’t wake up",
+      "url": "https://beardytas.com/garden-of-djinn/i-see-dead-people/"
     },
     {
       "id": "riverstyx",
       "name": "The River Styx",
       "author": "Rhea",
       "description": "This script contains reasons for minions to play more freely as outed evil, knowing that they can make extra plays from the grave. Good players can counter with their own dead votes, but use too many and the Demon may not restore the votes!",
-      "rule": "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token."
+      "rule": "The Ferryman's ability is amended to: Each night* the demon may choose if all dead players regain their vote token.",
+      "url": "https://beardytas.com/garden-of-djinn/the-river-styx/"
     },
     {
       "id": "beautifulhouse",
       "name": "This Is Not My Beautiful House",
       "author": "James Waumsley (aka JC)",
       "description": "The Amnesiac can sometimes be feels-bad for town if you can't get the ability. Here, the Amne is meant to be scary, because you know you're messing up town but not how. The script is boilerplate to let the ST have options how to wield the ability.",
-      "rule": "The Amnesiac is considered an Outsider character type."
+      "rule": "The Amnesiac is considered an Outsider character type.",
+      "url": "https://beardytas.com/garden-of-djinn/this-is-not-my-beautiful-house/"
     },
     {
       "id": "binarysupernovae",
@@ -106,7 +117,8 @@
       "name": "The Warrens",
       "author": "Zets (Lachlan)",
       "description": "A script where the Demon can escape threats by jumping around via nominations. Legion swapping does nothing, but Legion can take advantage of paranoia around the custom rule to push for executions. ",
-      "rule": "If 5 or more players live, evil players who nominate other living evil players (not Travellers) immediately swap characters."
+      "rule": "If 5 or more players live, evil players who nominate other living evil players (not Travellers) immediately swap characters.",
+      "url": "https://beardytas.com/garden-of-djinn/the-warrens/"
     },
     {
       "id": "seat7",
