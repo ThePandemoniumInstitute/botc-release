@@ -4,6 +4,8 @@
   "type": "array",
   "default": [],
   "title": "Blood on the Clocktower Custom Script",
+  "minItems": 5,
+  "maxItems": 151,
   "items": {
     "oneOf": [
       {
@@ -417,6 +419,15 @@
             "title": "The script background image",
             "examples": [
               "https://imgur.com/background.jpg"
+            ]
+          },
+          "almanac": {
+            "type": "string",
+            "format": "uri",
+            "maxLength": 250,
+            "title": "A link to the script's almanac page",
+            "examples": [
+              "https://beardytas.com/garden-of-djinn/the-ballad-of-seat-7/"
             ]
           },
           "bootlegger": {
