@@ -338,7 +338,11 @@
       ],
       "channel": 0,
       "time": 1744189200000,
-      "link": "https://www.twitch.tv/videos/2428092833"
+      "link": "https://www.twitch.tv/videos/2428092833",
+      "results": [
+        78,
+        22
+      ]
     },
     {
       "scripts": [
