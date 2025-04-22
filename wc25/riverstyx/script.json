@@ -18,16 +18,16 @@
   "general",
   "fortuneteller",
   "towncrier",
-  "undertaker",
   "savant",
   "fisherman",
   "amnesiac",
   "farmer",
   "mayor",
+  "magician",
   "butler",
   "drunk",
   "recluse",
-  "damsel",
+  "barber",
   "mezepheles",
   "poisoner",
   "fearmonger",
@@ -37,5 +37,6 @@
   "ojo",
   "vigormortis",
   "bootlegger",
-  "ferryman"
+  "ferryman",
+  "spiritofivory"
 ]
