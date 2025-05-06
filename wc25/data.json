@@ -480,56 +480,56 @@
   "playoffs": [
     {
       "scripts": [
-        "1st A",
-        "2nd B"
+        1,
+        "2nd Group B"
       ],
       "channel": 4,
       "time": 1747512000000
     },
     {
       "scripts": [
-        "1st B",
-        "2nd A"
+        "1st Group B",
+        3
       ],
       "channel": 2,
       "time": 1747785600000
     },
     {
       "scripts": [
-        "1st C",
-        "2nd D"
+        "1st Group C",
+        "2nd Group D"
       ],
       "channel": 5,
       "time": 1748217600000
     },
     {
       "scripts": [
-        "1st D",
-        "2nd C"
+        "1st Group D",
+        "2nd Group C"
       ],
       "channel": 7,
       "time": 1748455200000
     },
     {
       "scripts": [
-        "...",
-        "..."
+        "Quarterfinal 1 Winner",
+        "Quarterfinal 2 Winner"
       ],
       "channel": 0,
       "time": 1749027600000
     },
     {
       "scripts": [
-        "...",
-        "..."
+        "Quarterfinal 3 Winner",
+        "Quarterfinal 4 Winner"
       ],
       "channel": 6,
       "time": 1749150000000
     },
     {
       "scripts": [
-        "...",
-        "..."
+        "Semifinal 1 Winner",
+        "Semifinal 2 Winner"
       ],
       "channel": 6,
       "time": 1749754800000
