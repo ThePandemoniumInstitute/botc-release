@@ -494,19 +494,19 @@
     },
     {
       "scripts": [
-        6,
-        3
-      ],
-      "channel": 2,
-      "time": 1747785600000
-    },
-    {
-      "scripts": [
         "1st Group C",
         "2nd Group D"
       ],
       "channel": 5,
       "time": 1748217600000
+    },
+    {
+      "scripts": [
+        6,
+        3
+      ],
+      "channel": 2,
+      "time": 1747785600000
     },
     {
       "scripts": [
