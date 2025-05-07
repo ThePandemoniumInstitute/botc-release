@@ -519,14 +519,14 @@
     {
       "scripts": [
         "Quarterfinal 1 Winner",
-        "Quarterfinal 2 Winner"
+        "Quarterfinal 3 Winner"
       ],
       "channel": 0,
       "time": 1749027600000
     },
     {
       "scripts": [
-        "Quarterfinal 3 Winner",
+        "Quarterfinal 2 Winner",
         "Quarterfinal 4 Winner"
       ],
       "channel": 6,
