@@ -487,14 +487,14 @@
     {
       "scripts": [
         1,
-        "2nd Group B"
+        5
       ],
       "channel": 4,
       "time": 1747512000000
     },
     {
       "scripts": [
-        "1st Group B",
+        6,
         3
       ],
       "channel": 2,
