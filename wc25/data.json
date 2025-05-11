@@ -468,7 +468,11 @@
       ],
       "channel": 1,
       "time": 1746478800000,
-      "link": "https://www.youtube.com/watch?v=JA-jZIUbi-I"
+      "link": "https://www.youtube.com/watch?v=JA-jZIUbi-I",
+      "results": [
+        58,
+        42
+      ]
     },
     {
       "scripts": [
