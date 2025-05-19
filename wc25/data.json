@@ -494,7 +494,11 @@
       ],
       "channel": 7,
       "time": 1747245600000,
-      "link": "https://www.youtube.com/watch?v=DIfF0-GggjU"
+      "link": "https://www.youtube.com/watch?v=DIfF0-GggjU",
+      "results": [
+        48,
+        52
+      ]
     }
   ],
   "playoffs": [
@@ -510,7 +514,7 @@
     {
       "scripts": [
         8,
-        "2nd Group D"
+        13
       ],
       "channel": 5,
       "time": 1748217600000
@@ -525,7 +529,7 @@
     },
     {
       "scripts": [
-        "1st Group D",
+        15,
         11
       ],
       "channel": 7,
