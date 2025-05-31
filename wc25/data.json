@@ -522,7 +522,11 @@
       ],
       "channel": 5,
       "time": 1748214000000,
-      "link": "https://www.twitch.tv/videos/2468428391"
+      "link": "https://www.twitch.tv/videos/2468428391",
+      "results": [
+        51,
+        49
+      ]
     },
     {
       "scripts": [
@@ -549,7 +553,7 @@
     {
       "scripts": [
         5,
-        "Quarterfinal 3 Winner"
+        8
       ],
       "channel": 0,
       "time": 1749027600000
