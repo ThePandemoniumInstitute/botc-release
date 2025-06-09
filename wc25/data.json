@@ -561,7 +561,11 @@
       ],
       "channel": 0,
       "time": 1749027600000,
-      "link": "https://www.twitch.tv/videos/2476751670"
+      "link": "https://www.twitch.tv/videos/2476751670",
+      "results": [
+        63,
+        37
+      ]
     },
     {
       "scripts": [
@@ -574,7 +578,7 @@
     },
     {
       "scripts": [
-        "Semifinal 1 Winner",
+        5,
         "Semifinal 2 Winner"
       ],
       "channel": 6,
