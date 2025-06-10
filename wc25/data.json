@@ -574,12 +574,16 @@
       ],
       "channel": 6,
       "time": 1749150000000,
-      "link": "https://www.youtube.com/watch?v=rQVhHuTLMt8"
+      "link": "https://www.youtube.com/watch?v=rQVhHuTLMt8",
+      "results": [
+        59,
+        41
+      ]
     },
     {
       "scripts": [
         5,
-        "Semifinal 2 Winner"
+        3
       ],
       "channel": 6,
       "time": 1749754800000
