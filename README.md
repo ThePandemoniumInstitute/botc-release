@@ -25,6 +25,7 @@ Your custom (and homebrew) scripts can be augmented with "meta data" to improve 
     "logo": "https://i.imgur.com/logo.png",
     "hideTitle": false,
     "background": "https://i.imgur.com/background-image.jpg",
+    "almanac": "https://almanac.example/script.html",
     "bootlegger": ["Your custom bootlegger rule"],
     "firstNight": ["dusk","minioninfo", "demoninfo","poisoner","...","dawn"],
     "otherNight": ["dusk","poisoner","...","dawn"]
