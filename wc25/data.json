@@ -185,6 +185,13 @@
       "url": "https://www.twitch.tv/pattersttv",
       "description": "\"Brainiac: Science Abuse\" meets \"Blood on the Clocktower\". Expect bold claims, haywire choices and good times!",
       "time": "Wednesday 7pm UK"
+    },
+    {
+      "name": "Arif_A_",
+      "logo": "https://release.botc.app/wc25/arif.webp",
+      "url": "https://www.twitch.tv/arif_a_",
+      "description": "Arif's not doing a podcast",
+      "time": "Wednesday 7pm UK"
     }
   ],
   "matches": [
@@ -556,38 +563,27 @@
     },
     {
       "scripts": [
-        5,
+        1,
         8
       ],
-      "channel": 0,
-      "time": 1749027600000,
-      "link": "https://www.twitch.tv/videos/2476751670",
-      "results": [
-        63,
-        37
-      ]
+      "channel": 3,
+      "time": 1750449600000
     },
     {
       "scripts": [
-        3,
+        6,
         15
       ],
-      "channel": 6,
-      "time": 1749150000000,
-      "link": "https://www.youtube.com/watch?v=rQVhHuTLMt8",
-      "results": [
-        59,
-        41
-      ]
+      "channel": 8,
+      "time": 1750590000000
     },
     {
       "scripts": [
-        5,
-        3
+        "Winner Semifinal 1",
+        "Winner Semifinal 2"
       ],
       "channel": 6,
-      "time": 1749754800000,
-      "link": "https://www.youtube.com/watch?v=wGlru8k7Gx8"
+      "time": 1750964400000
     }
   ],
   "votePeriod": 432000000
