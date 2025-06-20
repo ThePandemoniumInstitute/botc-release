@@ -20,6 +20,17 @@
     <meta property="og:title" content="Blood on the Clocktower Online">
     <meta property="og:url" content="https://botc.app/">
     <style>
+      @font-face {
+        font-family: "Sorts Mill Goudy";
+        src: url("@/assets/fonts/GoudyStM.eot");
+        src: url("@/assets/fonts/GoudyStM.eot?#iefix") format("embedded-opentype"),
+          url("@/assets/fonts/GoudyStM.woff2") format("woff2"),
+          url("@/assets/fonts/GoudyStM.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       body {
         font-size: 1.2em;
         line-height: 1.4;
@@ -55,12 +66,14 @@
       }
 
       .content {
-        text-align: center;
+        font-family: "Sorts Mill Goudy", serif;
+        text-align: left;
         background: #000c;
-        padding: 5px 10px;
+        padding: 1em 2em;
         border-radius: 10px;
         border: 3px solid rgba(0, 0, 0, .6);
-        max-width: 800px;
+        max-width: 600px;
+        /* text-wrap: balance; */
       }
 
       h4 {
@@ -70,6 +83,11 @@
         font-family: Dumbledor, serif;
         text-transform: uppercase;
         font-size: 90%;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: underline;
       }
 
       .logo.tpi {
@@ -87,8 +105,19 @@
             <div id="maintenance">
                 <div class="header"><img src="https://release.botc.app/assets/logo.webp" alt="" class="logo app"></div>
                 <div class="content"><h4>Maintenance mode</h4>
-                    <p>We are currently undergoing maintenance and will hopefully be back online soon.</p>
-                </div>
+
+                  <p>The app is currently offline for maintenance, due to an issue with our app user accounts.</p>
+
+                  <p>
+                    We're working with Shopify to restore access as quickly as possible. We hope this
+                    will be resolved shortly, but there's a chance it will be a longer maintenance period.
+                  </p>
+
+                  <p>
+                    For more information, watch out for announcements through our Discord announcement channels or
+                    <a href="https://www.patreon.com/c/botconline/posts">public Patreon posts</a>.
+                  </p>
+              </div>
                 <div class="authors">
                     <img src="https://release.botc.app/assets/tpi.webp" alt="" class="logo tpi">
                 </div>
