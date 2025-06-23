@@ -9,7 +9,8 @@
     "hideTitle": true,
     "bootlegger": [
       "Dead players (not Demons) keep their abilities. Each Townsfolk loses their ability at the start of night 1, then regains it on death."
-    ]
+    ],
+    "isOfficial": false
   },
   "washerwoman",
   "librarian",
@@ -19,7 +20,7 @@
   "highpriestess",
   "dreamer",
   "cultleader",
-  "oracle",
+  "general",
   "seamstress",
   "farmer",
   "banshee",
@@ -35,5 +36,6 @@
   "imp",
   "ojo",
   "vigormortis",
-  "kazali"
+  "lordoftyphon",
+  "judge"
 ]
