@@ -581,12 +581,16 @@
       ],
       "channel": 8,
       "time": 1751194800000,
-      "link": "https://www.youtube.com/watch?v=HiNizPCj0EI"
+      "link": "https://www.youtube.com/watch?v=HiNizPCj0EI",
+      "results": [
+        46,
+        54
+      ]
     },
     {
       "scripts": [
         8,
-        "Winner Semifinal 2"
+        15
       ],
       "channel": 6,
       "time": 1752174000000
