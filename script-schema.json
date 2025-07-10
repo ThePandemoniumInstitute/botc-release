@@ -240,13 +240,14 @@
                 "type": {
                   "type": "string",
                   "title": "The integration type, where the feature will be used.",
-                  "description": "Currently supported values are:\n selection - during character selection,\n signal - during night signaling,\n ability - when clicking on the character token,\n vote - during a vote,\n reveal - at the end of the game, before characters are revealed",
+                  "description": "Currently supported values are:\n selection - during character selection,\n signal - during night signaling,\n ability - when clicking on the character token,\n vote - during a vote,\n reveal - at the end of the game, before characters are revealed,\n player - an ability that can be initiated by the player",
                   "enum": [
                     "selection",
                     "ability",
                     "signal",
                     "vote",
-                    "reveal"
+                    "reveal",
+                    "player"
                   ]
                 },
                 "name": {
@@ -264,7 +265,8 @@
                     "hidden",
                     "replace-character",
                     "player",
-                    "card"
+                    "card",
+                    "open-eyes"
                   ]
                 },
                 "value": {
@@ -311,8 +313,8 @@
               },
               "examples": [
                 {
-                  "type": "signal",
-                  "name": "grimoire",
+                  "type": "player",
+                  "name": "open-eyes",
                   "time": "night"
                 },
                 {
