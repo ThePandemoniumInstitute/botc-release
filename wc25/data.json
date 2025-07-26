@@ -594,7 +594,11 @@
       ],
       "channel": 6,
       "time": 1752174000000,
-      "link": "https://www.youtube.com/watch?v=dQdPRKXkQgw"
+      "link": "https://www.youtube.com/watch?v=dQdPRKXkQgw",
+      "results": [
+        45,
+        55
+      ]
     }
   ],
   "votePeriod": 432000000
