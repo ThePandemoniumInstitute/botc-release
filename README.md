@@ -93,6 +93,12 @@ All abilities can be modified by the `time` and `global` parameters.
 - **Name: `ghost-votes`:** This ability returns all spent ghost votes to dead players. <br>**Example:** Ferryman
 - **Name: `distribute-roles`:** This ability sends out the currently assigned characters to all players. <br>**Example:** Gardener
 
+#### Type: `player`
+
+This type allows the player with the associated character to use a special action. It is meant to be used independently from the Storyteller. These abilities can be modified by the `time` parameter.
+
+- **Name: `open-eyes`:** Lets the player with this character open their eyes at night. (assuming `time: "night"` is used in combination with this) The player can either fully open their eyes or have them half open (called 'peeking') with different effects. Fully opened eyes will allow the player to see all night informations that are being sent, while posing a small risk to be discovered by the player that has received the night signal. Opening their eyes only half-way allows them to see _who_ received the night signal, but not the content. Both modes also allow the player to send and receive private text messages to any non-neighbouring player. <br>**Example:** Wraith
+
 #### Type: `signal`
 
 This type allows the Storyteller to send a player special information through the night "wake" interface.
