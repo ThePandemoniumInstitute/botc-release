@@ -86,7 +86,8 @@
               "minion",
               "demon",
               "traveller",
-              "fabled"
+              "fabled",
+              "loric"
             ]
           },
           "edition": {
@@ -300,7 +301,7 @@
                 "global": {
                   "type": "string",
                   "title": "Global ability scope",
-                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used. This does not work on Fabled, because they are not considered to be on the Script.",
+                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used. This does not work on non-player characters, because they are not considered to be on the Script.",
                   "enum": [
                     "townsfolk",
                     "outsider",
