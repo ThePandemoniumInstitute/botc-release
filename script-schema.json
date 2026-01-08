@@ -216,6 +216,7 @@
                     "distribute-roles",
                     "bag-disabled",
                     "bag-duplicate",
+                    "good-duplicate",
                     "multiplier",
                     "hidden",
                     "replace-character",
@@ -382,7 +383,7 @@
             "type": "array",
             "title": "The relative First Night order of characters on this script.",
             "description": "A custom first night order for this script can be provided in the form of an array here, with optional special entries for 'dusk', 'minioninfo', 'demoninfo' and 'dawn'.",
-            "maxItems": 30,
+            "maxItems": 200,
             "items": {
               "type": "string",
               "title": "Character ID of an on-script character in the first night order"
@@ -409,7 +410,7 @@
             "type": "array",
             "title": "The relative Other Nights order of characters on this script.",
             "description": "A custom other night order for this script can be provided in the form of an array here, with optional special entries for 'dusk' and 'dawn'.",
-            "maxItems": 30,
+            "maxItems": 200,
             "items": {
               "type": "string",
               "title": "Character ID of an on-script character in the other night order"
