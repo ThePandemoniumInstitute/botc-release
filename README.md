@@ -79,6 +79,7 @@ This type modifies how the character selection process at the beginning of the g
 
 - **Name: `bag-disabled`:** This character can't be selected to go into the bag. (to be distributed to the players) <br>**Example:** Drunk, Marionette
 - **Name: `bag-duplicate`:** This character can be added more than once to the bag. (to be distributed to the players) <br>**Example:** Legion, Riot
+- **Name: `good-duplicate`:** This character allows any good character to be added more than once to the bag. If it's on an NPC in play, it also allows duplicate bluffs. <br>**Example:** Atheist, Pope
 
 #### Type: `ability`
 
