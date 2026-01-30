@@ -1,462 +1,444 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/ThePandemoniumInstitute/botc-release/main/script-schema.json",
-  "type": "array",
-  "default": [],
-  "title": "Blood on the Clocktower Custom Script",
-  "minItems": 5,
-  "maxItems": 201,
-  "items": {
-    "oneOf": [
+[
+  {
+    "id": "_meta",
+    "author": "",
+    "name": "Potíže přicházejí",
+    "firstNight": [
+      "dusk",
+      "minioninfo",
+      "demoninfo",
+      "Travič",
+      "Pradlena",
+      "Knihovník",
+      "Vyšetřovatel",
+      "Kuchař",
+      "Empat",
+      "Vědma",
+      "Sluha",
+      "Špeh",
+      "dawn"
+    ],
+    "otherNight": [
+      "dusk",
+      "Travič",
+      "Šarlatová žena",
+      "Čert",
+      "Strážkyně krkavců",
+      "Empat",
+      "Vědma",
+      "Hrobník",
+      "Sluha",
+      "Špeh",
+      "dawn"
+    ]
+  },
+  {
+    "id": "Pradlena",
+    "name": "Pradlena",
+    "image": [
+      "https://botc.app/assets/washerwoman_g-CVnYjPdR.webp",
+      "https://botc.app/assets/washerwoman_e-TC3PgT2N.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Začínáš s informací, že 1 ze 2 hráčů je konkrétní Měšťan.",
+    "flavor": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
+    "firstNight": 45,
+    "otherNight": 0,
+    "firstNightReminder": "Show the Townsfolk character token. Point to both the TOWNSFOLK and WRONG players.",
+    "reminders": [
+      "Měšťan",
+      "Nekdo jiný"
+    ]
+  },
+  {
+    "id": "Knihovník",
+    "name": "Knihovník",
+    "image": [
+      "https://botc.app/assets/librarian_g-Bvwb7yEa.webp",
+      "https://botc.app/assets/librarian_e-DNYbXXNX.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Začínáš s informací, že 1 ze 2 hráčů je konkrétní Podivín. (Nebo že ve hře není žádný Podivín.)",
+    "flavor": "Certainly madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
+    "firstNight": 46,
+    "otherNight": 0,
+    "firstNightReminder": "Show the Outsider character token. Point to both the OUTSIDER and WRONG players.",
+    "reminders": [
+      "Podivín",
+      "Někdo jiný"
+    ]
+  },
+  {
+    "id": "Vyšetřovatel",
+    "name": "Vyšetřovatel",
+    "image": [
+      "https://botc.app/assets/investigator_g-DWSOiA6Q.webp",
+      "https://botc.app/assets/investigator_e-CR-lRqwj.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Začínáš s informací, že 1 ze 2 hráčů je konkrétní Přisluhovač.",
+    "flavor": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",
+    "firstNight": 47,
+    "otherNight": 0,
+    "firstNightReminder": "Show the Minion character token. Point to both the MINION and WRONG players.",
+    "reminders": [
+      "Přisluhovač",
+      "Někdo jiný"
+    ]
+  },
+  {
+    "id": "Kuchař",
+    "name": "Kuchař",
+    "image": [
+      "https://botc.app/assets/chef_g-C3a3cGeP.webp",
+      "https://botc.app/assets/chef_e-B3RO5GXN.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Začínáš s informací, kolik párů zlých hráčů je ve hře.",
+    "flavor": "This evening's reservations seem odd. Never before has Mrs Mayweather kept company with that scamp from Hudson Lane. Yet, tonight, they have a table for two. Strange.",
+    "firstNight": 48,
+    "otherNight": 0,
+    "firstNightReminder": "Give a finger signal"
+  },
+  {
+    "id": "Empat",
+    "name": "Empat",
+    "image": [
+      "https://botc.app/assets/empath_g-vVEkU0cf.webp",
+      "https://botc.app/assets/empath_e-CWeYvCJ9.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc se dozvíš, kolik z tvých 2 živých sousedů je zlých.",
+    "flavor": "My skin prickles. Something is not right here. I can feel it.",
+    "firstNight": 49,
+    "otherNight": 68,
+    "firstNightReminder": "Give a finger signal.",
+    "otherNightReminder": "Give a finger signal."
+  },
+  {
+    "id": "Vědma",
+    "name": "Vědma",
+    "image": [
+      "https://botc.app/assets/fortuneteller_g-lQQzYvkg.webp",
+      "https://botc.app/assets/fortuneteller_e-BWljoXp7.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc vybereš 2 hráče: dozvíš se, je-li mezi nimi Démon. Jeden dobrý hráč se ti jeví jako Démon.",
+    "flavor": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+    "firstNight": 50,
+    "otherNight": 69,
+    "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
+    "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the RED HERRING).",
+    "reminders": [
+      "Návnada"
+    ]
+  },
+  {
+    "id": "Hrobník",
+    "name": "Hrobník",
+    "image": [
+      "https://botc.app/assets/undertaker_g-sXYI7VS3.webp",
+      "https://botc.app/assets/undertaker_e-DVB8aMO4.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc* se dozvíš, která postava byla ten den popravena.",
+    "flavor": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",
+    "firstNight": 0,
+    "otherNight": 70,
+    "otherNightReminder": "If a player was executed today, show their character token.",
+    "reminders": [
+      "Dnes zemřel"
+    ]
+  },
+  {
+    "id": "Strážkyně krkavců",
+    "name": "Strážkyně krkavců",
+    "image": [
+      "https://botc.app/assets/ravenkeeper_g-Bg-yrUxj.webp",
+      "https://botc.app/assets/ravenkeeper_e-Yrx6NFvE.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Pokud zemřeš v noci, budeš hned probuzena a vybereš 1 hráče: dozvíš se jeho postavu.",
+    "flavor": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! To the manor and to the river! To the alleys and to the salons! Fly!",
+    "firstNight": 0,
+    "otherNight": 67,
+    "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player, the that player's character token."
+  },
+  {
+    "id": "Panna",
+    "name": "Panna",
+    "image": [
+      "https://botc.app/assets/virgin_g-DfRSMLSj.webp",
+      "https://botc.app/assets/virgin_e-BB20SAPv.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Když tě poprvé někdo nominuje a nominujícím je Měšťan, je ihned popraven.",
+    "flavor": "I am pure. Let those who are without sin cast themselves down and suffer in my stead. My reputation shall not be stained with your venomous accusations.",
+    "firstNight": 0,
+    "otherNight": 0,
+    "reminders": [
+      "Bez schopnosti"
+    ]
+  },
+  {
+    "id": "Zabiják",
+    "name": "Zabiják",
+    "image": [
+      "https://botc.app/assets/slayer_g-BO_75tK_.webp",
+      "https://botc.app/assets/slayer_e-4pQk5kJR.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Jednou za hru, během dne, veřejně označíš 1 hráče: je-li to Démon, zemře.",
+    "flavor": "Die.",
+    "firstNight": 0,
+    "otherNight": 0,
+    "reminders": [
+      "Bez schopnosti"
+    ]
+  },
+  {
+    "id": "Voják",
+    "name": "Voják",
+    "image": [
+      "https://botc.app/assets/soldier_g-Baq_oQFs.webp",
+      "https://botc.app/assets/soldier_e-CvaeglsK.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Jsi v bezpečí před Démonem.",
+    "flavor": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "id": "Starosta",
+    "name": "Starosta",
+    "image": [
+      "https://botc.app/assets/mayor_g-BQeJ8Z2E.webp",
+      "https://botc.app/assets/mayor_e-Bc2mKeJ3.webp"
+    ],
+    "team": "townsfolk",
+    "edition": "OfficialCustoms",
+    "ability": "Jsou-li naživu pouze 3 hráči a neproběhne žádná poprava, tvůj tým vyhrává. Pokud v noci zemřeš, může namísto tebe zemřít jiný hráč.",
+    "flavor": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "id": "Sluha",
+    "name": "Sluha",
+    "image": [
+      "https://botc.app/assets/butler_g-Cr36DpeC.webp",
+      "https://botc.app/assets/butler_e-C2ho4G2f.webp"
+    ],
+    "team": "outsider",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc vybereš 1 hráče (ne sebe): následující den můžeš hlasovat pouze tehdy, pokud hlasuje i tento hráč.",
+    "flavor": "Yes, sir... No, sir... Certainly, sir.",
+    "firstNight": 51,
+    "otherNight": 83,
+    "firstNightReminder": "The Butler chooses a player. :reminder:",
+    "otherNightReminder": "The Butler chooses a player. :reminder:",
+    "reminders": [
+      "Pán"
+    ],
+    "jinxes": [
       {
-        "type": "object",
-        "title": "Script Character",
-        "required": ["id", "name", "team", "ability"],
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "title": "Character ID, alphanumeric lowercase",
-            "maxLength": 50,
-            "examples": ["washerwoman", "lilmonsta", "fanggu"]
-          },
-          "name": {
-            "type": "string",
-            "title": "Character name",
-            "maxLength": 30,
-            "examples": ["Washer Woman", "Lil' Monsta", "Fang-Gu"]
-          },
-          "image": {
-            "oneOf": [
-              {
-                "type": "string",
-                "format": "uri",
-                "title": "Character icon",
-                "examples": ["https://i.imgur.com/character-icon.png"]
-              },
-              {
-                "type": "array",
-                "title": "Set of character icon URLs",
-                "description": "For non-traveller characters, the icons should be regular alignment and flipped alignment, for travellers they should be unaligned, good alignment and evil alignment",
-                "minItems": 1,
-                "maxItems": 3,
-                "items": {
-                  "type": "string",
-                  "format": "uri"
-                },
-                "examples": [
-                  [
-                    "https://imgur.com/townsfolk.png",
-                    "https://imgur.com/townsfolk_evil.png"
-                  ],
-                  [
-                    "https://imgur.com/minion.png",
-                    "https://imgur.com/minion_good.png"
-                  ],
-                  [
-                    "https://imgur.com/traveller.png",
-                    "https://imgur.com/traveller_good.png",
-                    "https://imgur.com/traveller_evil.png"
-                  ]
-                ]
-              }
-            ]
-          },
-          "team": {
-            "type": "string",
-            "title": "Character team",
-            "enum": [
-              "townsfolk",
-              "outsider",
-              "minion",
-              "demon",
-              "traveller",
-              "fabled",
-              "loric"
-            ]
-          },
-          "edition": {
-            "type": "string",
-            "title": "The edition ID",
-            "maxLength": 50,
-            "examples": ["tb", "bmr", "snv", "fallofrome"]
-          },
-          "ability": {
-            "type": "string",
-            "title": "Character ability",
-            "maxLength": 250,
-            "examples": [
-              "You start knowing that 1 of 2 players is a particular Townsfolk.",
-              "Each night, Minions choose who babysits Lil' Monsta's token \u0026 \"is the Demon\". A player dies each night*. [+1 Minion]",
-              "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu \u0026 you die instead. [+1 Outsider]"
-            ]
-          },
-          "flavor": {
-            "type": "string",
-            "title": "Character flavor text",
-            "maxLength": 500,
-            "examples": [
-              "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
-              "Certainly madam, under normal circumstances, you may borrow the Codex Malificarium from the library vaults. However, you do not seem to be a member.",
-              "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?"
-            ]
-          },
-          "firstNight": {
-            "type": "number",
-            "title": "First night wake-up priority. 0 means this character doesn't wake during the first night.",
-            "examples": [37, 0, 15]
-          },
-          "firstNightReminder": {
-            "type": "string",
-            "title": "First night Storyteller reminder",
-            "maxLength": 500,
-            "examples": [
-              "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
-              "Wake all Minions, allow them to choose a babysitter :reminder:",
-              ""
-            ]
-          },
-          "otherNight": {
-            "type": "number",
-            "title": "Other nights wake-up priority. 0 means this character doesn't wake during other nights.",
-            "examples": [0, 10, 15]
-          },
-          "otherNightReminder": {
-            "type": "string",
-            "title": "Other nights Storyteller reminder",
-            "maxLength": 500,
-            "examples": [
-              "",
-              "Wake all Minions, allow them to choose a babysitter :reminder: A player might die :reminder:",
-              "The Fang Gu chooses a player. :reminder: If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens \u0026 give a thumbs-down. :reminder:"
-            ]
-          },
-          "reminders": {
-            "type": "array",
-            "maxItems": 20,
-            "default": [],
-            "title": "Character reminder tokens",
-            "items": {
-              "type": "string",
-              "maxLength": 30,
-              "examples": ["Townsfolk", "Wrong", "Dead", "Is The Demon"]
-            }
-          },
-          "remindersGlobal": {
-            "type": "array",
-            "maxItems": 20,
-            "default": [],
-            "title": "Global character reminder tokens, which will be selectable even when the character is not in play.",
-            "items": {
-              "type": "string",
-              "maxLength": 25,
-              "examples": ["Drunk", "Is The Philosopher"]
-            }
-          },
-          "setup": {
-            "type": "boolean",
-            "title": "Whether this character has a ability that is relevant for the game setup.",
-            "default": false
-          },
-          "jinxes": {
-            "type": "array",
-            "title": "Jinxes with other characters on this script",
-            "items": {
-              "type": "object",
-              "title": "An individual Jinx pair",
-              "required": ["id", "reason"],
-              "properties": {
-                "id": {
-                  "type": "string",
-                  "title": "The ID of the other character this one is jinxed with.",
-                  "maxLength": 50,
-                  "examples": ["spy", "fanggu", "lilmonsta"]
-                },
-                "reason": {
-                  "type": "string",
-                  "title": "The Jinx explanation",
-                  "maxLength": 500,
-                  "examples": [
-                    "If the Cannibal gains the Butler ability, the Cannibal learns this.",
-                    "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
-                  ]
-                }
-              }
-            }
-          },
-          "special": {
-            "type": "array",
-            "title": "Special app integration features for this character",
-            "items": {
-              "type": "object",
-              "title": "A special app integration feature",
-              "required": ["name", "type"],
-              "properties": {
-                "type": {
-                  "type": "string",
-                  "title": "The integration type, where the feature will be used.",
-                  "description": "Currently supported values are:\n selection - during character selection,\n signal - during night signaling,\n ability - when clicking on the character token,\n vote - during a vote,\n reveal - at the end of the game, before characters are revealed,\n player - an ability that can be initiated by the player",
-                  "enum": [
-                    "selection",
-                    "ability",
-                    "signal",
-                    "vote",
-                    "reveal",
-                    "player"
-                  ]
-                },
-                "name": {
-                  "type": "string",
-                  "title": "The feature name reference",
-                  "description": "This is a list of the currently implemented special features and will be growing over time.",
-                  "enum": [
-                    "grimoire",
-                    "pointing",
-                    "ghost-votes",
-                    "distribute-roles",
-                    "bag-disabled",
-                    "bag-duplicate",
-                    "good-duplicate",
-                    "multiplier",
-                    "hidden",
-                    "replace-character",
-                    "player",
-                    "card",
-                    "open-eyes"
-                  ]
-                },
-                "value": {
-                  "oneOf": [
-                    {
-                      "type": "string",
-                      "title": "Special ability text value",
-                      "maxLength": 50,
-                      "description": "The text value that will be used by the special ability."
-                    },
-                    {
-                      "type": "number",
-                      "title": "Special ability number value",
-                      "description": "The numeric value that will be used by the special ability."
-                    }
-                  ]
-                },
-                "time": {
-                  "type": "string",
-                  "title": "At which point during the game can the ability be used",
-                  "enum": [
-                    "pregame",
-                    "day",
-                    "night",
-                    "firstNight",
-                    "firstDay",
-                    "otherNight",
-                    "otherDay"
-                  ]
-                },
-                "global": {
-                  "type": "string",
-                  "title": "Global ability scope",
-                  "description": "If it's a global ability that can be used without the character being in play, this property defines on which characters it can be used. This does not work on non-player characters, because they are not considered to be on the Script.",
-                  "enum": [
-                    "townsfolk",
-                    "outsider",
-                    "minion",
-                    "demon",
-                    "traveller",
-                    "dead"
-                  ]
-                }
-              },
-              "examples": [
-                {
-                  "type": "player",
-                  "name": "open-eyes",
-                  "time": "night"
-                },
-                {
-                  "type": "signal",
-                  "name": "card",
-                  "value": "This is a Custom ST Card"
-                },
-                {
-                  "type": "ability",
-                  "name": "pointing",
-                  "time": "night",
-                  "global": "minion"
-                },
-                {
-                  "type": "vote",
-                  "name": "multiplier",
-                  "value": "3"
-                }
-              ]
-            }
-          }
-        },
-        "examples": [
-          {
-            "id": "washerwoman",
-            "name": "Washerwoman",
-            "edition": "tb",
-            "team": "townsfolk",
-            "firstNightReminder": "Show the Townsfolk character token. Point to both the *TOWNSFOLK* and *WRONG* players.",
-            "otherNightReminder": "",
-            "reminders": ["Townsfolk", "Wrong"],
-            "setup": false,
-            "ability": "You start knowing that 1 of 2 players is a particular Townsfolk.",
-            "flavor": "Bloodstains on a dinner jacket? No, this is cooking sherry. How careless.",
-            "firstNight": 37,
-            "otherNight": 0
-          }
-        ]
-      },
-      {
-        "type": "string",
-        "title": "Official character ID",
-        "maxLength": 20,
-        "description": "If you want to include official characters in the script, it is sufficient to provide their ID as a string",
-        "examples": ["soldier", "imp", "washerwoman"]
-      },
-      {
-        "type": "object",
-        "title": "Script Metadata",
-        "required": ["id", "name"],
-        "properties": {
-          "id": {
-            "type": "string",
-            "title": "The ID property must be called '_meta' for the Script metadata object.",
-            "enum": ["_meta"]
-          },
-          "name": {
-            "type": "string",
-            "title": "The script name",
-            "maxLength": 50,
-            "examples": ["Fall of Rome", "My Custom Homebrew"]
-          },
-          "author": {
-            "type": "string",
-            "title": "The script author",
-            "maxLength": 50,
-            "examples": ["The Pandemonium Institute", "Your Name"]
-          },
-          "logo": {
-            "type": "string",
-            "format": "uri",
-            "maxLength": 250,
-            "title": "The script logo image",
-            "examples": ["https://imgur.com/logo.png"]
-          },
-          "hideTitle": {
-            "type": "boolean",
-            "title": "Whether the script title / author should be hidden on the app"
-          },
-          "background": {
-            "type": "string",
-            "format": "uri",
-            "maxLength": 250,
-            "title": "The script background image",
-            "examples": ["https://imgur.com/background.jpg"]
-          },
-          "almanac": {
-            "type": "string",
-            "format": "uri",
-            "maxLength": 250,
-            "title": "A link to the script's almanac page",
-            "examples": [
-              "https://beardytas.com/garden-of-djinn/the-ballad-of-seat-7/"
-            ]
-          },
-          "bootlegger": {
-            "type": "array",
-            "title": "A list of homebrew rules that are to be used for this script",
-            "description": "Any (optional) homebrew rules that should be shown on the character sheet can be listed here, up to a limit of 10.",
-            "maxItems": 10,
-            "items": {
-              "type": "string",
-              "title": "A homebrew rule",
-              "examples": [
-                "If the Snake Charmer swaps with the Demon on the first night, they learn their Minions and Bluffs instead of the original Demon."
-              ]
-            }
-          },
-          "firstNight": {
-            "type": "array",
-            "title": "The relative First Night order of characters on this script.",
-            "description": "A custom first night order for this script can be provided in the form of an array here, with optional special entries for 'dusk', 'minioninfo', 'demoninfo' and 'dawn'.",
-            "maxItems": 200,
-            "items": {
-              "type": "string",
-              "title": "Character ID of an on-script character in the first night order"
-            },
-            "examples": [
-              [
-                "dusk",
-                "minioninfo",
-                "demoninfo",
-                "poisoner",
-                "spy",
-                "washerwoman",
-                "librarian",
-                "investigator",
-                "chef",
-                "empath",
-                "fortuneteller",
-                "butler",
-                "dawn"
-              ]
-            ]
-          },
-          "otherNight": {
-            "type": "array",
-            "title": "The relative Other Nights order of characters on this script.",
-            "description": "A custom other night order for this script can be provided in the form of an array here, with optional special entries for 'dusk' and 'dawn'.",
-            "maxItems": 200,
-            "items": {
-              "type": "string",
-              "title": "Character ID of an on-script character in the other night order"
-            },
-            "examples": [
-              [
-                "dusk",
-                "poisoner",
-                "monk",
-                "spy",
-                "scarletwoman",
-                "imp",
-                "ravenkeeper",
-                "undertaker",
-                "empath",
-                "fortuneteller",
-                "butler",
-                "dawn"
-              ]
-            ]
-          }
-        },
-        "examples": [
-          {
-            "id": "_meta",
-            "name": "Deadly Penance Day",
-            "author": "TPI",
-            "logo": "https://url.to/your/logo.png"
-          }
-        ]
-      },
-      {
-        "type": "object",
-        "title": "Official Character (deprecated)",
-        "deprecated": true,
-        "required": ["id"],
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string",
-            "maxLength": 20,
-            "title": "Official character ID",
-            "examples": ["soldier", "imp", "washerwoman"]
-          }
-        }
+        "id": "customofficals-organgrinder",
+        "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
       }
     ]
-  }
-}
+  },
+  {
+    "id": "Opilec",
+    "name": "Opilec",
+    "image": [
+      "https://botc.app/assets/drunk_g--QNmv0ZY.webp",
+      "https://botc.app/assets/drunk_e-bRjLB9FX.webp"
+    ],
+    "team": "outsider",
+    "edition": "OfficialCustoms",
+    "ability": "Nevíš, že jsi Opilec. Myslíš si, že jsi Měšťan, ale nejsi.",
+    "flavor": "I’m only a *hic* social drinker, my dear. Admittedly, I am a heavy *burp* socializer.",
+    "firstNight": 0,
+    "otherNight": 0,
+    "remindersGlobal": [
+      "Je Opilec"
+    ],
+    "setup": true,
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-disabled"
+      },
+      {
+        "type": "reveal",
+        "name": "replace-character"
+      }
+    ]
+  },
+  {
+    "id": "Samotář",
+    "name": "Samotář",
+    "image": [
+      "https://botc.app/assets/recluse_g-DxMFqO0r.webp",
+      "https://botc.app/assets/recluse_e-BUtHsTp3.webp"
+    ],
+    "team": "outsider",
+    "edition": "OfficialCustoms",
+    "ability": "Můžeš se jevit jako zlý, jako Přisluhovač nebo Démon, i když jsi mrtvý.",
+    "flavor": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "id": "Světec",
+    "name": "Světec",
+    "image": [
+      "https://botc.app/assets/saint_g-BU0hab0E.webp",
+      "https://botc.app/assets/saint_e-CnQBC4rO.webp"
+    ],
+    "team": "outsider",
+    "edition": "OfficialCustoms",
+    "ability": "Pokud zemřeš popravou, tvůj tým prohrává.",
+    "flavor": "Wisdom begets peace. Patience begets wisdom. Fear not, for the time shall come when fear too shall pass. Let us pray, and may the unity of our vision make saints of us all.",
+    "firstNight": 0,
+    "otherNight": 0
+  },
+  {
+    "id": "Travič",
+    "name": "Travič",
+    "image": [
+      "https://botc.app/assets/poisoner_e-Usf7TcoY.webp",
+      "https://botc.app/assets/poisoner_g-DHNIHhxZ.webp"
+    ],
+    "team": "minion",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc vybereš 1 hráče: je otrávený po celou tuto noc a následující den.",
+    "flavor": "Add compound Alpha to compound Beta... NOT TOO MUCH!",
+    "firstNight": 26,
+    "otherNight": 12,
+    "firstNightReminder": "The Poisoner chooses a player. :reminder:",
+    "otherNightReminder": "The Poisoner chooses a player. :reminder:",
+    "reminders": [
+      "Otrávený"
+    ]
+  },
+  {
+    "id": "Špeh",
+    "name": "Špeh",
+    "image": [
+      "https://botc.app/assets/spy_e-DU0tdGGe.webp",
+      "https://botc.app/assets/spy_g-7hnV_AFT.webp"
+    ],
+    "team": "minion",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc nahlédneš do grimoáru. Můžeš se jevit jako dobrý, Měšťan, nebo Podivín, i když jsi mrtvý.",
+    "flavor": "Any brewmaster worth their liquor, knows no concoction pours trouble quicker, than one where spies seem double.",
+    "firstNight": 65,
+    "otherNight": 84,
+    "firstNightReminder": "Show the Grimoire for as long as the Spy needs.",
+    "otherNightReminder": "Show the Grimoire for as long as the Spy needs.",
+    "jinxes": [
+      {
+        "id": "customofficals-alchemist",
+        "reason": "If the Alchemist has the Spy ability, they do not see the Grimoire, and the real Spy cannot register falsely."
+      },
+      {
+        "id": "customofficals-damsel",
+        "reason": "If the Spy is (or has been) in play, the Damsel is poisoned."
+      },
+      {
+        "id": "customofficals-magician",
+        "reason": "When the Spy sees the Grimoire, the Demon and Magician's character tokens are removed."
+      },
+      {
+        "id": "customofficals-ogre",
+        "reason": "The Spy registers as evil to the Ogre."
+      },
+      {
+        "id": "customofficals-poppygrower",
+        "reason": "If the Poppy Grower is in play, the Spy does not see the Grimoire until the Poppy Grower dies."
+      }
+    ],
+    "special": [
+      {
+        "name": "grimoire",
+        "type": "signal",
+        "time": "night"
+      }
+    ]
+  },
+  {
+    "id": "Šarlatová žena",
+    "name": "Šarlatová žena",
+    "image": [
+      "https://botc.app/assets/scarletwoman_e-BP5Fv_Ne.webp",
+      "https://botc.app/assets/scarletwoman_g-CM50XIwn.webp"
+    ],
+    "team": "minion",
+    "edition": "OfficialCustoms",
+    "ability": "Pokud je naživu alespoň 5 hráčů a zemře Démon, stáváš se Démonem. (Pocestní se nepočítají.)",
+    "flavor": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
+    "firstNight": 0,
+    "otherNight": 28,
+    "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the YOU ARE token, then the Demon token.",
+    "remindersGlobal": [
+      "Je démon"
+    ],
+    "jinxes": [
+      {
+        "id": "customofficals-alhadikhia",
+        "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
+      },
+      {
+        "id": "customofficals-fanggu",
+        "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+      }
+    ]
+  },
+  {
+    "id": "Baron-CZ",
+    "name": "Baron",
+    "image": [
+      "https://botc.app/assets/baron_e-CH4q2C6-.webp",
+      "https://botc.app/assets/baron_g-DSaQcH7D.webp"
+    ],
+    "team": "minion",
+    "edition": "OfficialCustoms",
+    "ability": "Ve hře jsou dva Podivíni navíc. [+2 Podivíni]",
+    "flavor": "This town has gone to the dogs, what? Cheap foreign labor... that's the ticket. Stuff them in the mine, I say. A bit of hard work never hurt anyone, and a clip'o'the ears to any brigand who says otherwise. It's all about the bottom line, what?",
+    "firstNight": 0,
+    "otherNight": 0,
+    "setup": true
+  },
+  {
+    "id": "Čert",
+    "name": "Čert",
+    "image": [
+      "https://botc.app/assets/imp_e-DNpveOPY.webp",
+      "https://botc.app/assets/imp_g-D-G7pJEY.webp"
+    ],
+    "team": "demon",
+    "edition": "OfficialCustoms",
+    "ability": "Každou noc* vybereš 1 hráče: ten zemře. Pokud takto zabiješ sebe, Přisluhovač se stane Čertem.",
+    "flavor": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
+    "firstNight": 0,
+    "otherNight": 34,
+    "otherNightReminder": "The Imp chooses a player. :reminder: If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the YOU ARE token, then show the Imp token.",
+    "reminders": [
+      "Mrtvý"
+    ]
+  },
+  "bootlegger"
+]
