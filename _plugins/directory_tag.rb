@@ -46,6 +46,8 @@ module Jekyll
           @attributes["exclude"] || ".html$",
           Regexp::EXTENDED | Regexp::IGNORECASE
         )
+      @include =
+        @attributes["include"] ? Regexp.new(@attributes["include"]) : nil
       @reverse = @attributes["reverse"].nil?
     end
 
@@ -62,8 +64,10 @@ module Jekyll
         raise Liquid::ArgumentError.new "Listed directory '#{listed_dir}' cannot be out of jekyll root"
       end
 
-      directory_files = File.join(listed_dir, "*")
+      recursive = @attributes["recursive"] == "true"
+      directory_files = File.join(listed_dir, recursive ? "**/*" : "*")
       files = Dir.glob(directory_files).reject { |f| f =~ @exclude }
+      files = Dir.glob(directory_files).select { |f| f =~ @include } if @include
       files.sort! { |x, y| @reverse ? x <=> y : y <=> x }
 
       length = files.length
