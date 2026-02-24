@@ -1,5 +1,6 @@
 ---
 title: About
+layout: post
 ---
 # Blood on the Clocktower App releases
 
