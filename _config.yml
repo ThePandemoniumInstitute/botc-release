@@ -1,5 +1,6 @@
 title: Blood on the Clocktower Online
 theme: minima
+url: https://release.botc.app
 
 plugins:
   - jekyll-seo-tag
@@ -16,6 +17,7 @@ plugins:
 
 header_pages:
   - index.md
+  - resources/index.md
 
 readme_index:
   with_frontmatter: true

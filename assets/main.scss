@@ -10,3 +10,23 @@
 .wrapper {
   max-width: 1012px;
 }
+
+ul.icons {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1em;
+}
+
+ul.icons figure {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+ul.icons figcaption {
+  font-family: monospace;
+  background-color: #ddd;
+  padding: 0.1em 0.4em;
+}
