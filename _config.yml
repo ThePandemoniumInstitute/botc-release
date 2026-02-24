@@ -1,3 +1,4 @@
+title: Blood on the Clocktower Online
 theme: minima
 
 plugins:
@@ -5,7 +6,7 @@ plugins:
   - jekyll-coffeescript
   - jekyll-commonmark-ghpages
   - jekyll-gist
-  - jekyll-github-metadata
+  # - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-relative-links
   - jekyll-optional-front-matter

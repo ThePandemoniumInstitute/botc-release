@@ -16,7 +16,7 @@ group :jekyll_plugins do
   gem "jekyll-commonmark-ghpages"
   gem "jekyll-default-layout"
   gem "jekyll-gist"
-  gem "jekyll-github-metadata"
+  # gem "jekyll-github-metadata"
   gem "jekyll-optional-front-matter"
   gem "jekyll-paginate"
   gem "jekyll-readme-index"
