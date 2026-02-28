@@ -15,7 +15,7 @@ plugins:
   - jekyll-titles-from-headings
 
 header_pages:
-  - README.md
+  - index.md
 
 readme_index:
   with_frontmatter: true
