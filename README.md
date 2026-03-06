@@ -18,9 +18,9 @@ Your custom (and homebrew) scripts can be augmented with "meta data" to improve 
     "id": "_meta",
     "name": "Your Custom Script Name",
     "author": "Your Name",
-    "logo": "https://i.imgur.com/logo.png",
+    "logo": "https://yourimages.example/logo.png",
     "hideTitle": false,
-    "background": "https://i.imgur.com/background-image.jpg",
+    "background": "https://yourimages.example/background-image.jpg",
     "almanac": "https://almanac.example/script.html",
     "bootlegger": ["Your custom bootlegger rule"],
     "firstNight": ["dusk","minioninfo", "demoninfo","poisoner","...","dawn"],
@@ -37,8 +37,8 @@ If you're interested in creating your own "homebrew" scripts or characters, ther
   "name": "Widow",
   "edition": "experimental",
   "image": [
-    "https://i.imgur.com/widow.png",
-    "https://i.imgur.com/widow_good.png"
+    "https://yourimages.example/widow.png",
+    "https://yourimages.example/widow_good.png"
   ],
   "team": "minion",
   "firstNight": 22,
@@ -130,3 +130,8 @@ This type modifies what happens when the game ends, right before the character r
   - "otherDay"
 - **Property `value`:** Can be a Number or String that is used as a parameter for a special ability or effect.
 - **Property `global`:** An awkward compromise to allow Lil'Monsta to work when it is not in play. Currently defines what kind of characters have the special ability as long as this character is on the script. I'd probably not use this if I were you, because it might be subject to change if I can think of a better way to make Lil'Monsta work. Can contain any character type value ("townsfolk", "outsider", "minion", "demon", "traveller") or the special value "dead" which allows all dead players to pick.
+
+## Toolmaker resources
+
+A collection of publicly usable assets that toolmakers can use in their own projects is available in the [resources](resources) directory of this repository. Use of these assets is subject to the [Community Created Content Policy
+](https://bloodontheclocktower.com/pages/community-created-content-policy).
