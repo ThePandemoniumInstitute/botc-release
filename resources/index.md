@@ -6,7 +6,7 @@ image: /resources/characters/bmr/tinker_g.webp
 
 # Resources
 
-As part of our [Community Created Content Policy](https://bloodontheclocktower.com/pages/community-created-content-policy), certain Blood on the Clocktower assets are available for toolmakers to use in their own projects subject to the terms of the policy. We provide current versions of these files as part of our Github `botc-release` repository, and hosted publicly on externally-linkable URLs, as listed in this document.
+As part of our [Community Created Content Policy](https://bloodontheclocktower.com/pages/community-created-content-policy), certain Blood on the Clocktower assets are available for toolmakers to use in their own projects subject to the terms of the policy. We provide current versions of these files as part of our Github `botc-release` repository, and hosted publicly on externally-linkable URLs, as listed in this document. While we try to keep the URLs as stable as possible, they might be subject to change as the game evolves. If you need absolutely static URLs, please host your own copy of those files.
 
 ## Data files
 
