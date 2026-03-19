@@ -37,6 +37,6 @@ ul.character__icons figcaption {
   font-family: monospace;
   font-size: 0.8em;
   background-color: #ddd;
-  overflow-wrap: break-word;
+  word-break: break-all;
   padding: 0.1em 0.4em;
 }

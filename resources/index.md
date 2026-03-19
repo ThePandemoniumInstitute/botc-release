@@ -16,12 +16,33 @@ As part of our [Community Created Content Policy](https://bloodontheclocktower.c
 | [jinxes.json](/resources/data/jinxes.json)         | All jinxes between released characters       |
 | [nightsheet.json](/resources/data/nightsheet.json) | Night order for all released characters      |
 
+## Edition logos
+
+Edition logos are stored under the directory <code>{{ site.url }}{{ page.dir }}editions/</code>
+
+<ul class="character__icons">
+  {% directory path: resources/editions recursive: true, include: \.webp$ %}
+  <li>
+    <figure>
+      <img src="{{file.url}}" alt="{{file.name}}" width="100" />
+      <figcaption>
+        <a href="{{file.url}}"
+          >{{file.url | replace_first: "/resources/editions/", "" }}</a
+        >
+      </figcaption>
+    </figure>
+  </li>
+  {% enddirectory %}
+</ul>
+
 ## Character icons
 
-You can download these icons directly from the repository, or link to them remotely with the appropriate path added to the base URL: <code>{{ site.url }}{{ page.dir }}characters</code>. These paths follow a deterministic format:
+Character icons are stored under the directory <code>{{ site.url }}{{ page.dir }}characters/</code>
 
-* `/{edition}/{id}_{alignment}.webp` for good (`g`) or evil (`e`) aligned icons
-* `/{edition}/{id}.webp` for unaligned icons
+These paths follow a deterministic format based on the information in the roles datafile:
+
+* `{edition}/{id}_{alignment}.webp` for good (`g`) or evil (`e`) aligned icons
+* `{edition}/{id}.webp` for unaligned icons
 
 {% icons %}
 {%- if edition -%}
@@ -34,7 +55,7 @@ You can download these icons directly from the repository, or link to them remot
   {% if i %}
     <li>
     <figure>
-    <img loading="lazy" src="/resources/characters/{{i.path}}" width="100" height="100" />
+    <img loading="lazy" src="/resources/characters/{{i.path}}" width="100" />
       <figcaption>
         <a href="/resources/characters/{{i.path}}">{{i.path }}</a>
       </figcaption>
