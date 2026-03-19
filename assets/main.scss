@@ -11,22 +11,32 @@
   max-width: 1012px;
 }
 
-ul.icons {
+ul.character__icons {
   list-style: none;
-  display: grid;
+  margin: 0;
+  padding: 0;
+  display: inline;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1em;
+
+  li {
+    display: inline-block;
+    margin: 0.5em;
+    width: 12em;
+  }
 }
 
-ul.icons figure {
+ul.character__icons figure {
   text-align: center;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 
-ul.icons figcaption {
+ul.character__icons figcaption {
   font-family: monospace;
+  font-size: 0.8em;
   background-color: #ddd;
+  overflow-wrap: break-word;
   padding: 0.1em 0.4em;
 }

@@ -23,17 +23,26 @@ You can download these icons directly from the repository, or link to them remot
 * `/{edition}/{id}_{alignment}.webp` for good (`g`) or evil (`e`) aligned icons
 * `/{edition}/{id}.webp` for unaligned icons
 
-<ul class="icons">
-  {% directory path: resources/characters recursive: true, include: \.webp$ %}
-  <li>
+{% icons %}
+{%- if edition -%}
+<h3>{{ edition }}</h3>
+{%- endif -%}
+
+<ul class="character__icons">
+{% for c in characters %}
+  {% for i in c.icons %}
+  {% if i %}
+    <li>
     <figure>
-      <img src="{{file.url}}" alt="{{file.name}}" width="100" height="100" />
+    <img loading="lazy" src="/resources/characters/{{i.path}}" width="100" height="100" />
       <figcaption>
-        <a href="{{file.url}}"
-          >{{file.url | replace_first: "/resources/characters", "" }}</a
-        >
+        <a href="/resources/characters/{{i.path}}">{{i.path }}</a>
       </figcaption>
     </figure>
-  </li>
-  {% enddirectory %}
+    </li>
+  {% endif %}
+  {% endfor %}
+
+{% endfor %}
 </ul>
+{% endicons %}
