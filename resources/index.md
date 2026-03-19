@@ -8,6 +8,27 @@ image: /resources/characters/bmr/tinker_g.webp
 
 As part of our [Community Created Content Policy](https://bloodontheclocktower.com/pages/community-created-content-policy), certain Blood on the Clocktower assets are available for toolmakers to use in their own projects subject to the terms of the policy. We provide current versions of these files as part of our Github `botc-release` repository, and hosted publicly on externally-linkable URLs, as listed in this document. While we try to keep the URLs as stable as possible, they might be subject to change as the game evolves. If you need absolutely static URLs, please host your own copy of those files.
 
+## Community Created Content logos
+
+Projects using official assets are asked to display one of the Community Created Content (CCC) logos on their project to clearly identify their content as non-TPI content.
+
+The CCC logos are stored under the directory <code>{{ site.url }}{{ page.dir }}community/</code>
+
+<ul class="character__icons">
+{% directory path: resources/community recursive: true, include: \.png$ %}
+<li>
+  <figure>
+    <img loading="lazy" src="{{file.url}}" alt="{{file.name}}" />
+    <figcaption>
+      <a href="{{file.url}}"
+        >{{file.url | replace_first: "/resources/community/", "" }}</a
+      >
+    </figcaption>
+  </figure>
+</li>
+{% enddirectory %}
+</ul>
+
 ## Data files
 
 | File                                               | Purpose                                      |
@@ -24,7 +45,7 @@ Edition logos are stored under the directory <code>{{ site.url }}{{ page.dir }}e
   {% directory path: resources/editions recursive: true, include: \.webp$ %}
   <li>
     <figure>
-      <img src="{{file.url}}" alt="{{file.name}}" width="100" />
+      <img loading="lazy" src="{{file.url}}" alt="{{file.name}}" width="100" />
       <figcaption>
         <a href="{{file.url}}"
           >{{file.url | replace_first: "/resources/editions/", "" }}</a
