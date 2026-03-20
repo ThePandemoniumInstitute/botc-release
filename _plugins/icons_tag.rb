@@ -9,6 +9,7 @@ module BotcRelease
       "fabled" => "Fabled"
     }
     ROLES_PATH = "resources/data/roles.json"
+    TEAM_ORDER = %w[fabled loric townsfolk outsider minion demon traveller]
 
     def self.roles
       @roles ||=
@@ -77,10 +78,9 @@ module BotcRelease
                 roles.dig(path, "name") || File.basename(path).capitalize,
               "team" => roles.dig(path, "team"),
               "edition" => File.dirname(path),
-              "key" => [
-                icons.compact.size,
-                roles.dig(path, "team") || "",
-                roles.dig(path, "name")
+              "sort_key" => [
+                Data::TEAM_ORDER.index(roles.dig(path, "team")) || -1,
+                path
               ]
             }
           end
@@ -94,7 +94,7 @@ module BotcRelease
             .map do |edition, characters|
               context["directory"] = edition == "." ? nil : edition
               context["edition"] = Data::EDITIONS[edition]
-              context["characters"] = characters.sort_by { |c| c["key"] }
+              context["characters"] = characters.sort_by { |c| c["sort_key"] }
               render_children(context)
             end
         end
