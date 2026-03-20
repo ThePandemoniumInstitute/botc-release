@@ -60,8 +60,6 @@ module BotcRelease
           .map { |path| relative_path.call(path) }
           .group_by { |path| path.sub(/(_[eg])?\.webp$/, "") }
 
-      # return icons_by_character.pretty_inspect
-
       # Link each path to the corresponding character data, so we can group by character type
       character_icons =
         icons_by_character
@@ -88,13 +86,11 @@ module BotcRelease
           end
           .sort_by { |c| [c.dig("character", "team") || "", c["path"]] }
 
-      # return character_icons.pretty_inspect
-
       context
         .stack do
           character_icons
             .group_by { |c| c["edition"] }
-            .sort_by { |e, _| e }
+            .sort_by { |e, _| Data::EDITIONS[e] || "" }
             .map do |edition, characters|
               context["directory"] = edition == "." ? nil : edition
               context["edition"] = Data::EDITIONS[edition]
