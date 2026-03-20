@@ -2006,7 +2006,7 @@
     "team": "traveller",
     "otherNightReminder": "Before dawn, choose a player not marked *NOT ME*. Wake the target. Show the *YOU ARE* info token & their new character token.",
     "reminders": [
-      "Not me"
+      "Not Me"
     ],
     "setup": false,
     "ability": "Each day, choose a player: a different player changes character tonight.",
@@ -2374,6 +2374,29 @@
     "flavor": "When sophistry becomes stupidity and hypocrisy cruelty, retreat to the garden. The final love of old men is flowers and stones."
   },
   {
+    "id": "godofug",
+    "reminders": [
+      "Hat"
+    ],
+    "setup": false,
+    "name": "God of Ug",
+    "team": "loric",
+    "edition": "loric",
+    "ability": "One Ug hat. When wear Ug hat, must speak one sound at a time but vote twice. If fail, pass Ug hat.",
+    "flavor": "Blessed are my children, for they see the beauty in simple things.",
+    "special": [
+      {
+        "type": "vote",
+        "name": "multiplier",
+        "value": 2
+      },
+      {
+        "type": "reminder",
+        "name": "public"
+      }
+    ]
+  },
+  {
     "id": "hindu",
     "reminders": [],
     "setup": false,
@@ -2382,6 +2405,16 @@
     "edition": "loric",
     "ability": "The first 4 players to die are immediately reincarnated as Travellers of the same alignment.",
     "flavor": "चत्वारो मृत्युमध्ये पतन्ति, चत्वारो यात्री पुनरुद्गताः। चत्वारो धर्मे स्थितचित्तवृत्तेः, चत्वार एषां न पुनः क्षयः॥"
+  },
+  {
+    "id": "knaves",
+    "reminders": [],
+    "setup": false,
+    "name": "Knaves",
+    "team": "loric",
+    "edition": "loric",
+    "ability": "There are 2 Storytellers: one lies & one tells the truth. Once per game, at dusk, they might switch.",
+    "flavor": "Every wall is a door. Every meal is a feast."
   },
   {
     "id": "pope",
