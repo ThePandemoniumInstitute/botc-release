@@ -133,5 +133,5 @@ This type modifies what happens when the game ends, right before the character r
 
 ## Toolmaker resources
 
-A collection of publicly usable assets that toolmakers can use in their own projects is available in the [resources](resources) directory of this repository. Use of these assets is subject to the [Community Created Content Policy
+A collection of publicly usable assets that toolmakers can use in their own projects is available in the [resources](resources) directory of this repository, and publicly available on the domain [release.botc.app](https://release.botc.app/resources). Use of these assets is subject to the [Community Created Content Policy
 ](https://bloodontheclocktower.com/pages/community-created-content-policy).
