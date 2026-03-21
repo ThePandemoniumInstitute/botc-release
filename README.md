@@ -118,6 +118,12 @@ This type modifies what happens when the game ends, right before the character r
 
 - **Name: `replace-character`:** Assigning the _first `remindersGlobal` reminder token_ (e.g. "Is the Philosopher") to a player will replace their current character with this one when the game ends.  <br>**Example:** Drunk, Philosopher
 
+#### Type: `reminder`
+
+This type modifies the behaviour of all reminder tokens related to this character. Note there is currently no way to apply this to individual reminder tokens.
+
+- **Name: `public`:** This character's reminder tokens will be public. Public reminder tokens can only be assigned by the Storyteller and are visible to all players.
+
 #### Optional properties: `time`, `value`, `global`
 
 - **Property `time`:** This property limits when a specific ability or effect can be used. Currently only works on `ability` and `signal` type of effects. Possible values:
