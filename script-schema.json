@@ -18,13 +18,13 @@
             "type": "string",
             "title": "Character ID, alphanumeric lowercase",
             "maxLength": 50,
-            "examples": ["washerwoman", "lilmonsta", "fanggu"]
+            "examples": ["washerwoman", "lilmonsta", "fanggu", "alhadikhia"]
           },
           "name": {
             "type": "string",
             "title": "Character name",
             "maxLength": 30,
-            "examples": ["Washer Woman", "Lil' Monsta", "Fang-Gu"]
+            "examples": ["Washerwoman", "Lil' Monsta", "Fang Gu", "Al-Hadikhia"]
           },
           "image": {
             "oneOf": [
@@ -202,7 +202,8 @@
                     "signal",
                     "vote",
                     "reveal",
-                    "player"
+                    "player",
+                    "reminder"
                   ]
                 },
                 "name": {
@@ -222,7 +223,8 @@
                     "replace-character",
                     "player",
                     "card",
-                    "open-eyes"
+                    "open-eyes",
+                    "public"
                   ]
                 },
                 "value": {
