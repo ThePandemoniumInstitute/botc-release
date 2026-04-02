@@ -10,6 +10,11 @@ Depending on your operating system, you have to select the correct file:
 - **Mac (Intel):** Blood.on.the.Clocktower.Online_[version]_x64.dmg
 - **Linux:** _currently not supported_ (check [this](https://bugs.webkit.org/show_bug.cgi?id=235885) and [this](https://github.com/tauri-apps/wry/issues/85) issue for progress)
 
+## Toolmaker resources
+
+A collection of publicly usable assets that toolmakers can use in their own projects is available in the [resources](resources) directory of this repository, and publicly available on the domain [release.botc.app](https://release.botc.app/resources). Use of these assets is subject to the [Community Created Content Policy
+](https://bloodontheclocktower.com/pages/community-created-content-policy).
+
 ## Custom scripts
 Your custom (and homebrew) scripts can be augmented with "meta data" to improve the play experience and make it easier for your players to see what script exactly is being played. In order to do this, just add a `meta` entry to your custom script JSON, with the following (optional) properties:
 
@@ -136,8 +141,3 @@ This type modifies the behaviour of all reminder tokens related to this characte
   - "otherDay"
 - **Property `value`:** Can be a Number or String that is used as a parameter for a special ability or effect.
 - **Property `global`:** An awkward compromise to allow Lil'Monsta to work when it is not in play. Currently defines what kind of characters have the special ability as long as this character is on the script. I'd probably not use this if I were you, because it might be subject to change if I can think of a better way to make Lil'Monsta work. Can contain any character type value ("townsfolk", "outsider", "minion", "demon", "traveller") or the special value "dead" which allows all dead players to pick.
-
-## Toolmaker resources
-
-A collection of publicly usable assets that toolmakers can use in their own projects is available in the [resources](resources) directory of this repository, and publicly available on the domain [release.botc.app](https://release.botc.app/resources). Use of these assets is subject to the [Community Created Content Policy
-](https://bloodontheclocktower.com/pages/community-created-content-policy).
