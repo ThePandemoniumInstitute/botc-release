@@ -1492,7 +1492,7 @@
     ],
     "setup": true,
     "ability": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]",
-    "flavor": "Hail the guardians of the north; by my intellect, thou art cut. Hail the guardians of the east; by my will, thou art dominated. Hail the guardians of the south; by that which lies beyond, the mystery is revealed. Hail the guardians of the west; a shield in the darkness"
+    "flavor": "Hail the guardians of the north; by my intellect, thou art cut. Hail the guardians of the east; by my will, thou art dominated. Hail the guardians of the south; by that which lies beyond, the mystery is revealed. Hail the guardians of the west; a shield in the darkness."
   },
   {
     "id": "eviltwin",
@@ -2336,8 +2336,8 @@
   },
   {
     "id": "bootlegger",
-    "reminders": [],
-    "setup": false,
+    "reminders": ["?", "?"],
+    "setup": true,
     "name": "Bootlegger",
     "team": "loric",
     "edition": "loric",
@@ -2359,11 +2359,11 @@
   {
     "id": "gardener",
     "reminders": [],
-    "setup": false,
+    "setup": true,
     "name": "Gardener",
     "team": "loric",
     "edition": "loric",
-    "ability": "The Storyteller assigns 1 or more players' characters.",
+    "ability": "The Storyteller assigns all players' characters.",
     "special": [
       {
         "name": "distribute-roles",
