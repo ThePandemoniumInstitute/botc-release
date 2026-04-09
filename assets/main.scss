@@ -11,7 +11,7 @@
   max-width: 1012px;
 }
 
-ul.character__icons {
+ul.toolmaker_icons {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -19,24 +19,89 @@ ul.character__icons {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1em;
 
-  li {
+  > li {
+    position: relative;
+
     display: inline-block;
     margin: 0.5em;
     width: 12em;
   }
+
+  .variants {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: column;
+
+    > button {
+      appearance: none;
+      text-align: center;
+      cursor: pointer;
+
+      &.alignment--n {
+        --highlight: #9402b1;
+      }
+
+      &.alignment--g {
+        --highlight: #026db1;
+      }
+
+      &.alignment--e {
+        --highlight: #910e13;
+      }
+
+      &:first-child {
+        border-radius: 0.2em 0.2em 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 0.2em 0.2em;
+      }
+    }
+  }
+
+  figure {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  figcaption {
+    font-family: monospace;
+    font-size: 0.8em;
+    background-color: #ddd;
+    word-break: break-all;
+    padding: 0.1em 0.4em;
+  }
 }
 
-ul.character__icons figure {
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
+.character__icons li {
+  &:has(.variants) img {
+    cursor: pointer;
+  }
 
-ul.character__icons figcaption {
-  font-family: monospace;
-  font-size: 0.8em;
-  background-color: #ddd;
-  word-break: break-all;
-  padding: 0.1em 0.4em;
+  @for $i from 0 through 2 {
+    figure {
+      display: none;
+    }
+
+    .variants button {
+      border: 1px solid var(--highlight);
+      color: var(--highlight);
+    }
+
+    &[data-selected-index="#{$i}"] .variants button:nth-child(#{$i + 1}) {
+      background-color: var(--highlight);
+      color: white;
+    }
+
+    &[data-selected-index="#{$i}"] figure[data-index="#{$i}"] {
+      display: flex;
+    }
+  }
 }

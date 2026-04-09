@@ -14,7 +14,7 @@ Projects using official assets are asked to display one of the Community Created
 
 The CCC logos are stored under the directory <code>{{ site.url }}{{ page.dir }}community/</code>
 
-<ul class="character__icons">
+<ul class="toolmaker_icons">
 {% directory path: resources/community recursive: true, include: \.png$ %}
 <li>
   <figure>
@@ -41,7 +41,7 @@ The CCC logos are stored under the directory <code>{{ site.url }}{{ page.dir }}c
 
 Edition logos are stored under the directory <code>{{ site.url }}{{ page.dir }}editions/</code>
 
-<ul class="character__icons">
+<ul class="toolmaker_icons">
   {% directory path: resources/editions recursive: true, include: \.webp$ %}
   <li>
     <figure>
@@ -65,26 +65,63 @@ These paths follow a deterministic format based on the information in the roles 
 * `{edition}/{id}_{alignment}.webp` for good (`g`) or evil (`e`) aligned icons
 * `{edition}/{id}.webp` for unaligned icons
 
+Click to toggle between different variants of the icons where relevant.
+
 {% icons %}
 {%- if edition -%}
-<h3>{{ edition }}</h3>
+### {{ edition }}
 {%- endif -%}
 
-<ul class="character__icons">
+<ul class="toolmaker_icons character__icons">
 {% for c in characters %}
+  <li id="icon-{{ c.role_id }}" data-selected-index="0">
+  {% if c.icons.size > 1 %}
+    <div class="variants">
+    {% for i in c.icons %}
+      <button class="alignment--{{i.alignment | default: "n"}}">{{ i.alignment | default: "n" }}</button>
+    {% endfor %}
+    </div>
+  {% endif %}
+
   {% for i in c.icons %}
-  {% if i %}
-    <li>
-    <figure>
-    <img loading="lazy" src="/resources/characters/{{i.path}}" width="100" />
+    <figure data-index="{{ forloop.index0 }}">
+      <img loading="lazy" src="/resources/characters/{{i.path}}" width="100" height="100" />
       <figcaption>
         <a href="/resources/characters/{{i.path}}">{{i.path }}</a>
       </figcaption>
     </figure>
-    </li>
-  {% endif %}
   {% endfor %}
+  </li>
 
 {% endfor %}
 </ul>
 {% endicons %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .querySelectorAll("ul.character__icons li:has(.variants)")
+    .forEach((iconList) => {
+      iconList.addEventListener("click", (event) => {
+        const variants =
+          event.currentTarget.querySelectorAll(".variants button");
+
+        let newIndex;
+
+        if (event.target.tagName === "IMG") {
+          const selectedIndex = Number(
+            event.currentTarget.getAttribute("data-selected-index"),
+          );
+          newIndex = (selectedIndex + 1) % variants.length;
+        } else if (event.target.tagName === "BUTTON") {
+          newIndex = Array.from(variants).indexOf(event.target);
+        }
+
+        if (newIndex !== undefined) {
+          event.currentTarget.setAttribute("data-selected-index", newIndex);
+        }
+      });
+    });
+});
+
+</script>

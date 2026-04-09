@@ -1,4 +1,83 @@
 module BotcRelease
+  class Icon < Struct.new(
+    :path,
+    :edition,
+    :role_id,
+    :role,
+    :alignment,
+    keyword_init: true
+  )
+    REGEX =
+      /^
+        (?<edition>.*)
+        #{File::SEPARATOR}
+        (?<role_id>.*?)
+        (_(?<alignment>[ge]))?.webp
+      $/x
+
+    def self.from_path(path)
+      match = path.match(REGEX)
+      role = Data.roles[match[:role_id]]
+
+      new(
+        path: path,
+        role: role,
+        **match.named_captures.transform_keys(&:to_sym)
+      )
+    end
+
+    def team
+      role["team"] if role
+    end
+
+    def role_alignment_order
+      # The `role_id` check is for the generic icons which don't appear in the
+      # roles data, but still have a different default alignment.
+      if team == "minion" || team == "demon" || role_id == "minion" ||
+           role_id == "demon"
+        [nil, "e", "g"]
+      else
+        [nil, "g", "e"]
+      end
+    end
+
+    def sort_key
+      role_alignment_order.index(alignment) || -1
+    end
+
+    def <=>(other)
+      self.sort_key <=> other.sort_key
+    end
+
+    def to_liquid
+      to_h.transform_keys(&:to_s)
+    end
+  end
+
+  class Character < Struct.new(:role_id, :icons, keyword_init: true)
+    TEAM_ORDER = %w[townsfolk outsider minion demon traveller fabled loric]
+
+    def role
+      Data.roles[role_id]
+    end
+
+    def team
+      role["team"] if role
+    end
+
+    def sort_key
+      [TEAM_ORDER.index(team) || -1, role_id]
+    end
+
+    def <=>(other)
+      self.sort_key <=> other.sort_key
+    end
+
+    def to_liquid
+      to_h.transform_keys(&:to_s).merge("role" => role)
+    end
+  end
+
   module Data
     EDITIONS = {
       "tb" => "Trouble Brewing",
@@ -9,14 +88,13 @@ module BotcRelease
       "fabled" => "Fabled"
     }
     ROLES_PATH = "resources/data/roles.json"
-    TEAM_ORDER = %w[fabled loric townsfolk outsider minion demon traveller]
 
     def self.roles
       @roles ||=
         begin
           data = JSON.parse(File.read(File.expand_path(ROLES_PATH)))
 
-          index_by(data) { |role| "#{role["edition"]}/#{role["id"]}" }
+          index_by(data) { |role| role["id"] }
         end
     end
 
@@ -49,54 +127,33 @@ module BotcRelease
     def render(context)
       dir = Pathname.new(site_directory(context, @root))
 
-      roles = Data.roles
-
       relative_path = ->(path) do
         Pathname.new(path).relative_path_from(dir).to_s
       end
 
-      icons_by_character =
+      edition_icons =
         Dir
           .glob(File.join(dir, "**/*.webp"))
-          .map { |path| relative_path.call(path) }
-          .group_by { |path| path.sub(/(_[eg])?\.webp$/, "") }
-
-      # Link each path to the corresponding character data, so we can group by character type
-      character_icons =
-        icons_by_character
-          .map do |path, icons|
-            mapped_icons =
-              icons.each_with_object({}) do |icon, map|
-                character = File.basename(icon).match(/(?:_([eg]))?.webp/)
-                map[character[1]] = { "path" => icon }
-              end
-
-            {
-              "path" => path,
-              "icons" => mapped_icons.values_at(nil, "e", "g"),
-              "label" =>
-                roles.dig(path, "name") || File.basename(path).capitalize,
-              "team" => roles.dig(path, "team"),
-              "edition" => File.dirname(path),
-              "sort_key" => [
-                Data::TEAM_ORDER.index(roles.dig(path, "team")) || -1,
-                path
-              ]
-            }
-          end
-          .sort_by { |c| [c.dig("character", "team") || "", c["path"]] }
+          .map { |path| BotcRelease::Icon.from_path(relative_path.call(path)) }
+          .group_by(&:edition)
+          .sort_by { |e, _| Data::EDITIONS[e] || "" }
 
       context
         .stack do
-          character_icons
-            .group_by { |c| c["edition"] }
-            .sort_by { |e, _| Data::EDITIONS[e] || "" }
-            .map do |edition, characters|
-              context["directory"] = edition == "." ? nil : edition
-              context["edition"] = Data::EDITIONS[edition]
-              context["characters"] = characters.sort_by { |c| c["sort_key"] }
-              render_children(context)
-            end
+          edition_icons.map do |edition, edition_icons|
+            characters =
+              edition_icons
+                .group_by(&:role_id)
+                .map do |role_id, role_icons|
+                  Character.new(role_id: role_id, icons: role_icons.sort)
+                end
+
+            context["directory"] = edition == "." ? nil : edition
+            context["edition"] = Data::EDITIONS[edition]
+            context["characters"] = characters.sort
+
+            render_children(context)
+          end
         end
         .join("\n")
     end
