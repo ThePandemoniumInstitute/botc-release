@@ -102,10 +102,27 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelectorAll("ul.character__icons li:has(.variants)")
     .forEach((iconList) => {
-      iconList.addEventListener("click", (event) => {
-        const variants =
-          event.currentTarget.querySelectorAll(".variants button");
+      const variants = iconList.querySelectorAll(".variants button");
 
+      iconList.addEventListener("mouseenter", (event) => {
+        if(iconList.dataset.prefetched) return;
+
+        if(event.currentTarget == event.target) {
+          const images = event.currentTarget.querySelectorAll("img");
+
+          images.forEach((i) => {
+            const link = document.createElement("link");
+            link.setAttribute('rel', 'prefetch');
+            link.setAttribute('href', i.src);
+
+            document.head.appendChild(link);
+          })
+
+          iconList.dataset.prefetched = true
+        }
+      })
+
+      iconList.addEventListener("click", (event) => {
         let newIndex;
 
         if (event.target.tagName === "IMG") {
