@@ -217,6 +217,7 @@
                     "distribute-roles",
                     "bag-disabled",
                     "bag-duplicate",
+                    "evil-duplicate",
                     "good-duplicate",
                     "multiplier",
                     "hidden",
