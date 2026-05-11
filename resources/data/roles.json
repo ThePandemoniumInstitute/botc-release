@@ -918,6 +918,10 @@
       {
         "type": "selection",
         "name": "good-duplicate"
+      },
+      {
+        "type": "selection",
+        "name": "evil-duplicate"
       }
     ],
     "flavor": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands."
@@ -2429,6 +2433,10 @@
       {
         "type": "selection",
         "name": "good-duplicate"
+      },
+      {
+        "type": "selection",
+        "name": "evil-duplicate"
       }
     ]
   },
@@ -2447,7 +2455,8 @@
   },
   {
     "id": "tor",
-    "otherNightReminder": "If a player died tonight, show the *YOU ARE* info token, their character token, & a thumbs up or thumbs down.",
+    "firstNightReminder": "Skip Minion Info and Demon Info.",
+    "otherNightReminder": "If a player died tonight, show the *YOU ARE* info token, their character token, & give a thumb signal.",
     "reminders": [],
     "setup": true,
     "name": "Tor",
