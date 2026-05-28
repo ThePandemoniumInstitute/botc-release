@@ -58,9 +58,9 @@ module Jekyll
       path ||= @attributes.fetch("path", ".")
 
       source_dir = context.registers[:site].source
-      listed_dir = File.expand_path(File.join(source_dir, path))
+      listed_dir = File.realpath(File.join(source_dir, path))
 
-      unless listed_dir.include?(source_dir)
+      unless listed_dir.start_with?(source_dir)
         raise Liquid::ArgumentError.new "Listed directory '#{listed_dir}' cannot be out of jekyll root"
       end
 
