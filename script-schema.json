@@ -16,7 +16,8 @@
         "properties": {
           "id": {
             "type": "string",
-            "title": "Character ID, alphanumeric lowercase",
+            "title": "Character ID, alphanumeric lowercase without spaces",
+            "pattern": "^[a-z0-9]+$",
             "maxLength": 50,
             "examples": ["washerwoman", "lilmonsta", "fanggu", "alhadikhia"]
           },
